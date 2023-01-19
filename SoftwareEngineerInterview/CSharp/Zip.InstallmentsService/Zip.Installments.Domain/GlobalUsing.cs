@@ -1,0 +1,1 @@
+﻿global using Zip.Installments.Domain.BaseEntity;

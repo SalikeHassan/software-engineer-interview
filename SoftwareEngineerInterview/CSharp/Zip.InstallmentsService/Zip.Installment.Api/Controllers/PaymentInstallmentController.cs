@@ -1,91 +1,103 @@
-﻿namespace Zip.Installments.Api.Controllers
+﻿namespace Zip.Installments.Api.Controllers;
+
+using static Microsoft.AspNetCore.Http.StatusCodes;
+using System.Text.Json;
+
+/// <summary>
+/// Api to create and get payment installment.
+/// </summary>
+[ApiVersion("1.0")]
+[Route("api/v{v:apiVersion}/paymentinstallment")]
+[ApiController]
+public class PaymentInstallmentController : ControllerBase
 {
-    using MediatR;
-    using Microsoft.AspNetCore.Mvc;
-    using Zip.Installments.Command.Commands;
-    using Zip.Installments.Contract.Request;
-    using Zip.Installments.Contract.Response;
-    using Zip.Installments.Query.Queries;
-    using Zip.InstallmentsService.Interface;
-    using static Microsoft.AspNetCore.Http.StatusCodes;
+    private readonly IPaymentInstallementPlan paymentInstallementPlan;
+    private readonly IMediator mediator;
+    private readonly ILogger<PaymentInstallmentController> logger;
+
+    public PaymentInstallmentController(IPaymentInstallementPlan paymentInstallementPlan,
+        IMediator mediator,
+        ILogger<PaymentInstallmentController> logger)
+    {
+        this.paymentInstallementPlan = paymentInstallementPlan;
+        this.mediator = mediator;
+        this.logger = logger;
+    }
 
     /// <summary>
-    /// Api to create and get payment installment.
+    /// Action method returns the payment installment details based on the payment id passed.
     /// </summary>
-    [ApiVersion("1.0")]
-    [Route("v{v:apiVersion}/paymentinstallment")]
-    [ApiController]
-    public class PaymentInstallmentController : ControllerBase
+    /// <param name="id">payment id.</param>
+    /// <returns>Returns the list of installement details.</returns>
+    [HttpGet("{id:Guid}")]
+    [ProducesResponseType(Status204NoContent)]
+    [ProducesResponseType(typeof(PaymentPlanResponse), Status200OK)]
+    [ProducesResponseType(Status500InternalServerError)]
+    public async Task<IActionResult> Get(Guid id)
     {
-        private readonly IPaymentInstallementPlan paymentInstallementPlan;
-        private readonly IMediator mediator;
+        logger.LogInformation("Get payment installment plan by id api called.");
+        var data = await this.mediator.Send(new GetPaymentInstallmentPlanByIdQuery(id) { });
 
-        public PaymentInstallmentController(IPaymentInstallementPlan paymentInstallementPlan,
-            IMediator mediator)
+        if (data == null)
         {
-            this.paymentInstallementPlan = paymentInstallementPlan;
-            this.mediator = mediator;
+            logger.LogInformation($"No payment installment plan found for id : {id}");
+            return this.NoContent();
         }
 
-        /// <summary>
-        /// Action method returns the payment installment details based on the payment id passed.
-        /// </summary>
-        /// <param name="id">payment id.</param>
-        /// <returns>Returns the list of installement details.</returns>
-        [HttpGet("{id:int}")]
-        [ProducesResponseType(Status204NoContent)]
-        [ProducesResponseType(typeof(List<InstallmentDetailsResponse>), Status200OK)]
-        [ProducesResponseType(Status500InternalServerError)]
-        public async Task<IActionResult> Get(int id)
+        else
         {
+            return this.Ok(data);
+        }
+    }
+
+    /// <summary>
+    /// Action method to create new payment installment based on the frequency and num of installement passed in request model.
+    /// </summary>
+    /// <param name="paymentPlanRequest">Model contains data to create installment plan.</param>
+    /// <remarks>
+    /// Sample request:
+    ///     POST api/v1/paymentinstallment
+    ///     {
+    ///         "Amount": 1000,
+    ///         "NumofInstallement": 4,
+    ///         "Frequency": 14
+    ///     }
+    /// </remarks>
+    /// <returns>Returns the list of installement details.</returns>
+    [HttpPost]
+    [ProducesResponseType(Status400BadRequest)]
+    [ProducesResponseType(Status204NoContent)]
+    [ProducesResponseType(typeof(PaymentPlanResponse), Status201Created)]
+    [ProducesResponseType(Status500InternalServerError)]
+    public async Task<IActionResult> Post([FromBody] PaymentPlanRequest paymentPlanRequest)
+    {
+        if (!ModelState.IsValid)
+        {
+            logger.LogInformation("Payment installment plan can not be created due to bad request model.");
+
+            //Sending bad request status to client when request model validation failed
+            return this.BadRequest();
+        }
+
+        else
+        {
+            logger.LogInformation($"Create payment installment plan api called.");
+            logger.LogDebug($"Payment installment plan request body: {JsonSerializer.Serialize(paymentPlanRequest)}");
+
+            var payment = this.paymentInstallementPlan.CreatePaymentPlan(paymentPlanRequest);
+
+            var id = await this.mediator.Send(new CreatePaymentInstallmentPlanCommand(payment) { });
+
             var data = await this.mediator.Send(new GetPaymentInstallmentPlanByIdQuery(id) { });
 
-            if (!data.Any())
+            if (data == null)
             {
-                return this.NoContent();
+                return this.StatusCode(Constants.InternalServerErrCode, Constants.InstallmentPlanNotCreatedErrMsg);
             }
 
             else
             {
-                return this.Ok(data);
-            }
-        }
-
-        /// <summary>
-        /// Action method to create new payment installment based on the frequency and num of installement passed in request model.
-        /// </summary>
-        /// <param name="paymentPlanRequest">Model contains data to create installment plan.</param>
-        /// <returns>Returns the list of installement details.</returns>
-        [HttpPost]
-        [ProducesResponseType(Status400BadRequest)]
-        [ProducesResponseType(Status204NoContent)]
-        [ProducesResponseType(typeof(List<InstallmentDetailsResponse>), Status200OK)]
-        [ProducesResponseType(Status500InternalServerError)]
-        public async Task<IActionResult> Post([FromBody] PaymentPlanRequest paymentPlanRequest)
-        {
-            if (!ModelState.IsValid)
-            {
-                //Sending bad request status to client when request model validation failed
-                return this.BadRequest();
-            }
-
-            else
-            {
-                var payment = this.paymentInstallementPlan.CreatePaymentPlan(paymentPlanRequest);
-
-                var id = await this.mediator.Send(new CreatePaymentInstallmentPlanCommand(payment) { });
-
-                var data = await this.mediator.Send(new GetPaymentInstallmentPlanByIdQuery(id) { });
-
-                if (!data.Any())
-                {
-                    return this.NoContent();
-                }
-
-                else
-                {
-                    return this.Ok(data);
-                }
+                return this.CreatedAtAction(nameof(Post), data);
             }
         }
     }

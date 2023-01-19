@@ -2,6 +2,7 @@ namespace Zip.Installments.Command.Test
 {
     using AutoFixture;
     using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Options;
     using Moq;
     using Zip.Installments.Command.Commands;
     using Zip.Installments.Domain.Entities;
@@ -12,6 +13,8 @@ namespace Zip.Installments.Command.Test
     public class CreatePaymentInstallmentPlanCommandTest
     {
         private Mock<ZipPayContext> zipPayContext;
+        private DbContextOptions<ZipPayContext> options;
+
 
         [SetUp]
         public void Setup()
@@ -20,6 +23,9 @@ namespace Zip.Installments.Command.Test
             var param = fixture.Build<DbContextOptions<ZipPayContext>>().Create();
             this.zipPayContext = new Mock<ZipPayContext>(param);
             this.zipPayContext.Setup(m => m.SaveChangesAsync(It.IsAny<CancellationToken>()));
+
+            this.options = new DbContextOptionsBuilder<ZipPayContext>()
+            .UseInMemoryDatabase(databaseName: "temp_zippay", b => b.EnableNullChecks(false)).Options;
         }
 
         [Test]

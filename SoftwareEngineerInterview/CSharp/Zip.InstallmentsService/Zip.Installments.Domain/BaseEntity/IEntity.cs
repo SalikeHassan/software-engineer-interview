@@ -1,13 +1,12 @@
-﻿namespace Zip.Installments.Domain.BaseEntity
+﻿namespace Zip.Installments.Domain.BaseEntity;
+
+/// <summary>
+/// Generic interface
+/// The intention of having a generic interface to give flexibility to developer and prodcut owner
+/// to define primary key column to any supported primitive data type
+/// </summary>
+/// <typeparam name="TId"></typeparam>
+public interface IEntity<TId>
 {
-    /// <summary>
-    /// Generic interface
-    /// The intention of having a generic interface to give flexibility to developer and prodcut owner
-    /// to define primary key column to any supported primitive data type
-    /// </summary>
-    /// <typeparam name="TId"></typeparam>
-    public interface IEntity<TId>
-    {
-        TId Id { get; set; }
-    }
+    TId Id { get; set; }
 }

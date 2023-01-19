@@ -1,50 +1,49 @@
-namespace Zip.Installments.ServiceTest
+namespace Zip.Installments.ServiceTest;
+
+using Moq;
+using Zip.Installments.Contract.Request;
+using Zip.Installments.Domain.Entities;
+using Zip.InstallmentsService.Service;
+
+[TestFixture]
+public class PaymentInstallmentPlanTest
 {
-    using Moq;
-    using Zip.Installments.Contract.Request;
-    using Zip.Installments.Domain.Entities;
-    using Zip.InstallmentsService.Service;
+    private PaymentInstallmentPlan paymentInstallmentPlan;
 
-    [TestFixture]
-    public class PaymentInstallmentPlanTest
+    [SetUp]
+    public void Setup()
     {
-        private PaymentInstallmentPlan paymentInstallmentPlan;
+        this.paymentInstallmentPlan = new PaymentInstallmentPlan();
+    }
 
-        [SetUp]
-        public void Setup()
+    [Test]
+    public void Should_Create_PaymentPlan()
+    {
+        var paymentPlanRequest = new PaymentPlanRequest()
         {
-            this.paymentInstallmentPlan = new PaymentInstallmentPlan();
-        }
+            Amount = 1000,
+            Frequency = 4,
+            NumofInstallement = 4
+        };
 
-        [Test]
-        public void Should_Create_PaymentPlan()
+        var paymentPlan = this.paymentInstallmentPlan.CreatePaymentPlan(paymentPlanRequest);
+
+        Assert.Multiple(() =>
         {
-            var paymentPlanRequest = new PaymentPlanRequest()
-            {
-                Amount = 1000,
-                Frequency = 4,
-                NumofInstallement = 4
-            };
+            Assert.That(paymentPlan, !Is.Null);
+            Assert.That(paymentPlan.InstallmentPlans.Count, Is.GreaterThan(0));
+            Assert.That(paymentPlan.InstallmentPlans?.FirstOrDefault()?.DueAmount, Is.EqualTo(250));
+        });
+    }
 
-            var paymentPlan = this.paymentInstallmentPlan.CreatePaymentPlan(paymentPlanRequest);
+    [Test]
+    public void Should_Not_Create_PaymentPlan()
+    {
 
-            Assert.Multiple(() =>
-            {
-                Assert.That(paymentPlan, !Is.Null);
-                Assert.That(paymentPlan.InstallmentPlans.Count, Is.GreaterThan(0));
-                Assert.That(paymentPlan.InstallmentPlans?.FirstOrDefault()?.DueAmount, Is.EqualTo(250));
-            });
-        }
+        var paymentPlanRequest = new PaymentPlanRequest() { };
 
-        [Test]
-        public void Should_Not_Create_PaymentPlan()
-        {
+        var paymentPlan = this.paymentInstallmentPlan.CreatePaymentPlan(paymentPlanRequest);
 
-            var paymentPlanRequest = new PaymentPlanRequest() { };
-
-            var paymentPlan = this.paymentInstallmentPlan.CreatePaymentPlan(paymentPlanRequest);
-
-            Assert.That(paymentPlan, Is.Null);
-        }
+        Assert.That(paymentPlan, Is.Null);
     }
 }

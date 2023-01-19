@@ -1,39 +1,36 @@
-﻿namespace Zip.Installments.Command.Commands
+﻿namespace Zip.Installments.Command.Commands;
+
+/// <summary>
+/// Class defines method to create payment installment plan.
+/// </summary>
+public class CreatePaymentInstallmentPlanCommand : IRequest<Guid>
 {
-    using MediatR;
-    using System.Threading.Tasks;
-    using Zip.Installments.Domain.Entities;
-    using Zip.Installments.Infrastructure.Context;
+    private readonly Payment payment;
+
+    public CreatePaymentInstallmentPlanCommand(Payment payment)
+    {
+        this.payment = payment;
+    }
 
     /// <summary>
-    /// Class defines method to create payment installment plan.
+    /// Method creates new payment plan and installment plan
     /// </summary>
-    public class CreatePaymentInstallmentPlanCommand : IRequest<int>
+    public class CreatePaymentInstallementPlanCommandHandler : IRequestHandler<CreatePaymentInstallmentPlanCommand, Guid>
     {
-        private readonly Payment payment;
+        private readonly ZipPayContext zipPayContext;
 
-        public CreatePaymentInstallmentPlanCommand(Payment payment)
+        public CreatePaymentInstallementPlanCommandHandler(ZipPayContext zipPayContext)
         {
-            this.payment = payment;
+            this.zipPayContext = zipPayContext;
         }
 
-        public class CreatePaymentInstallementPlanCommandHandler : IRequestHandler<CreatePaymentInstallmentPlanCommand, int>
+        public async Task<Guid> Handle(CreatePaymentInstallmentPlanCommand request, CancellationToken cancellationToken)
         {
-            private readonly ZipPayContext zipPayContext;
+            this.zipPayContext.Payment.Add(request.payment);
 
-            public CreatePaymentInstallementPlanCommandHandler(ZipPayContext zipPayContext)
-            {
-                this.zipPayContext = zipPayContext;
-            }
+            await this.zipPayContext.SaveChangesAsync();
 
-            public async Task<int> Handle(CreatePaymentInstallmentPlanCommand request, CancellationToken cancellationToken)
-            {
-                this.zipPayContext.Payment.Add(request.payment);
-
-                await this.zipPayContext.SaveChangesAsync();
-
-                return request.payment.Id;
-            }
+            return request.payment.Id;
         }
     }
 }

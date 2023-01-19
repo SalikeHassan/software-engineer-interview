@@ -1,25 +1,22 @@
-﻿namespace Zip.Installments.Domain.Entities
+﻿namespace Zip.Installments.Domain.Entities;
+
+/// <summary>
+/// Class declares properties of intallmentplan entity class.
+/// </summary>
+public class InstallmentPlan : Entity
 {
-    using Zip.Installments.Domain.BaseEntity;
+    /// <summary>
+    /// Due date.
+    /// </summary>
+    public DateTimeOffset DueDate { get; set; }
 
     /// <summary>
-    /// Class declares properties of intallmentplan entity class.
+    /// Due amount.
     /// </summary>
-    public class InstallmentPlan : Entity
-    {
-        /// <summary>
-        /// Due date.
-        /// </summary>
-        public DateTimeOffset DueDate { get; set; }
+    public decimal DueAmount { get; set; }
 
-        /// <summary>
-        /// Due amount.
-        /// </summary>
-        public decimal DueAmount { get; set; }
+    //Navigation property
+    public virtual Payment Payment { get; set; }
 
-        //Navigation property
-        public virtual Payment Payment { get; set; }
-
-        public int PaymentId { get; set; }
-    }
+    public Guid PaymentId { get; set; }
 }

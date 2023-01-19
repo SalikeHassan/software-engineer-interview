@@ -1,18 +1,17 @@
-﻿namespace Zip.Installments.Infrastructure.EntityConfiguration
-{
-    using Microsoft.EntityFrameworkCore;
-    using Microsoft.EntityFrameworkCore.Metadata.Builders;
-    using Zip.Installments.Domain.Entities;
+﻿namespace Zip.Installments.Infrastructure.EntityConfiguration;
 
-    /// <summary>
-    /// Class defines the configuration of payment entity class.
-    /// </summary>
-    public class PaymentEntityConfiguration : IEntityTypeConfiguration<Payment>
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Zip.Installments.Domain.Entities;
+
+/// <summary>
+/// Class defines the configuration of payment entity class.
+/// </summary>
+public class PaymentEntityConfiguration : IEntityTypeConfiguration<Payment>
+{
+    public void Configure(EntityTypeBuilder<Payment> builder)
     {
-        public void Configure(EntityTypeBuilder<Payment> builder)
-        {
-            builder.Property(x => x.Amount)
-                .IsRequired();
-        }
+        builder.Property(x => x.Amount)
+            .IsRequired();
     }
 }

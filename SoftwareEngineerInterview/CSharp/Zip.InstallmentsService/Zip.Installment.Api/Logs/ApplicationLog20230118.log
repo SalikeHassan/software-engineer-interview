@@ -59,4 +59,77 @@
 ][2023-01-18 10:27:17.301 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 57.6915ms
 ][2023-01-18 10:27:17.301 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
 ][2023-01-18 10:27:17.302 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/v1/paymentinstallment application/json 68 - 200 - application/json;+charset=utf-8 59.6088ms
+][2023-01-18 17:10:27.825 +05:30 [INF] Now listening on: https://localhost:7188
+][2023-01-18 17:10:27.878 +05:30 [INF] Now listening on: http://localhost:5199
+][2023-01-18 17:10:27.891 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+][2023-01-18 17:10:27.895 +05:30 [INF] Hosting environment: Development
+][2023-01-18 17:10:27.898 +05:30 [INF] Content root path: C:\Users\hassa\source\repos\SalikeHassan\software-engineer-interview\SoftwareEngineerInterview\CSharp\Zip.InstallmentsService\Zip.Installment.Api\
+][2023-01-18 17:10:31.036 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/weatherforecast - -
+][2023-01-18 17:10:31.210 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/weatherforecast - - - 404 0 - 179.0110ms
+][2023-01-18 17:10:44.047 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-18 17:10:44.059 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 11.3685ms
+][2023-01-18 17:10:44.078 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-18 17:10:44.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 229.4620ms
+][2023-01-18 17:10:44.414 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-18 17:10:44.744 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 330.2881ms
+][2023-01-18 17:10:50.496 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/v1/paymentinstallment application/json 61
+][2023-01-18 17:10:50.515 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-18 17:10:50.580 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-18 17:10:50.854 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-18 17:10:50.907 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 321.9175ms
+][2023-01-18 17:10:50.910 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-18 17:10:50.910 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/v1/paymentinstallment application/json 61 - 400 - application/problem+json;+charset=utf-8 414.3630ms
+][2023-01-18 17:11:07.830 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/v1/paymentinstallment application/json 61
+][2023-01-18 17:11:07.831 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-18 17:11:07.832 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-18 17:11:07.838 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-18 17:11:07.839 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 6.8061ms
+][2023-01-18 17:11:07.839 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-18 17:11:07.839 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/v1/paymentinstallment application/json 61 - 400 - application/problem+json;+charset=utf-8 9.5047ms
+][2023-01-18 17:12:01.403 +05:30 [INF] Now listening on: https://localhost:7188
+][2023-01-18 17:12:01.476 +05:30 [INF] Now listening on: http://localhost:5199
+][2023-01-18 17:12:01.500 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+][2023-01-18 17:12:01.512 +05:30 [INF] Hosting environment: Development
+][2023-01-18 17:12:01.515 +05:30 [INF] Content root path: C:\Users\hassa\source\repos\SalikeHassan\software-engineer-interview\SoftwareEngineerInterview\CSharp\Zip.InstallmentsService\Zip.Installment.Api\
+][2023-01-18 17:12:02.770 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/weatherforecast - -
+][2023-01-18 17:12:02.783 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-18 17:12:05.634 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-18 17:12:05.646 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 2859.9428ms
+][2023-01-18 17:12:05.811 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 176.3907ms
+][2023-01-18 17:12:05.832 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/weatherforecast - - - 404 0 - 3088.3903ms
+][2023-01-18 17:12:06.005 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-18 17:12:06.419 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 414.0742ms
+][2023-01-18 17:12:18.574 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/v1/paymentinstallment application/json 46
+][2023-01-18 17:12:18.608 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-18 17:12:18.702 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-18 17:12:19.265 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-18 17:12:19.422 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 700.43ms
+][2023-01-18 17:12:19.430 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-18 17:12:19.431 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/v1/paymentinstallment application/json 46 - 400 - application/problem+json;+charset=utf-8 856.9478ms
+][2023-01-18 17:51:00.651 +05:30 [INF] Now listening on: https://localhost:7188
+][2023-01-18 17:51:00.782 +05:30 [INF] Now listening on: http://localhost:5199
+][2023-01-18 17:51:00.811 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+][2023-01-18 17:51:00.821 +05:30 [INF] Hosting environment: Development
+][2023-01-18 17:51:00.828 +05:30 [INF] Content root path: C:\Users\hassa\source\repos\SalikeHassan\software-engineer-interview\SoftwareEngineerInterview\CSharp\Zip.InstallmentsService\Zip.Installment.Api\
+][2023-01-18 17:51:02.745 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/index.html - -
+][2023-01-18 17:51:03.760 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/index.html - - - 200 - text/html;charset=utf-8 1026.4423ms
+][2023-01-18 17:51:03.871 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-18 17:51:03.878 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 7.3957ms
+][2023-01-18 17:51:03.931 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-18 17:51:03.970 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.9610ms
+][2023-01-18 17:51:04.227 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-18 17:51:04.786 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 559.1166ms
+][2023-01-18 17:51:30.476 +05:30 [INF] Now listening on: https://localhost:7188
+][2023-01-18 17:51:30.533 +05:30 [INF] Now listening on: http://localhost:5199
+][2023-01-18 17:51:30.548 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+][2023-01-18 17:51:30.552 +05:30 [INF] Hosting environment: Development
+][2023-01-18 17:51:30.555 +05:30 [INF] Content root path: C:\Users\hassa\source\repos\SalikeHassan\software-engineer-interview\SoftwareEngineerInterview\CSharp\Zip.InstallmentsService\Zip.Installment.Api\
+][2023-01-18 17:51:31.936 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/index.html - -
+][2023-01-18 17:51:38.064 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/index.html - - - 200 - text/html;charset=utf-8 6123.0821ms
+][2023-01-18 17:51:38.324 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-18 17:51:38.336 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 12.6809ms
+][2023-01-18 17:51:38.481 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-18 17:51:38.936 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 455.2310ms
+][2023-01-18 17:51:39.634 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-18 17:51:40.107 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 473.4266ms
 ]

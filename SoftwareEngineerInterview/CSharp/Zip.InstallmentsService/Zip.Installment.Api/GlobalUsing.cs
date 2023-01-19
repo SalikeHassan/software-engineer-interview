@@ -1,0 +1,15 @@
+﻿global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using Zip.Installments.Command.Commands;
+global using Zip.Installments.Common;
+global using Zip.Installments.Contract.Request;
+global using Zip.Installments.Contract.Response;
+global using Zip.Installments.Query.Queries;
+global using Zip.InstallmentsService.Interface;
+global using Microsoft.AspNetCore.Mvc.Versioning;
+global using Microsoft.EntityFrameworkCore;
+global using Zip.Installments.Infrastructure.Context;
+global using Zip.InstallmentsService.Service;
+global using Hellang.Middleware.ProblemDetails;
+global using System.Reflection;
+global using Microsoft.OpenApi.Models;
