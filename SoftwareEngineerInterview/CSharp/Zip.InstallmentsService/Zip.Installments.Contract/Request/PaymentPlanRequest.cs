@@ -6,17 +6,17 @@
 public class PaymentPlanRequest
 {
     /// <summary>
-    /// Actual amount.
+    ///Gets and Sets Actual amount
     /// </summary>
     public decimal Amount { get; set; }
 
     /// <summary>
-    /// Number of installement.
+    ///Gets and Set Number of installment
     /// </summary>
     public int NumofInstallement { get; set; }
 
     /// <summary>
-    /// Frequency of installement.
+    ///Gets and Sets Frequency of installment
     /// </summary>
     public int Frequency { get; set; }
 }

@@ -2,7 +2,7 @@
 using FluentValidation;
 
 /// <summary>
-/// Class defines the custom validation using fluent validation api methods.
+/// Class defines the custom validation using fluent validation api methods
 /// </summary>
 public class CustomValidator : AbstractValidator<PaymentPlanRequest>
 {

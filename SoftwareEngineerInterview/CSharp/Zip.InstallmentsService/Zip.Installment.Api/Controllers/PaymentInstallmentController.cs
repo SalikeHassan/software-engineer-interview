@@ -1,10 +1,9 @@
 ﻿namespace Zip.Installments.Api.Controllers;
 
 using static Microsoft.AspNetCore.Http.StatusCodes;
-using System.Text.Json;
 
 /// <summary>
-/// Api to create and get payment installment.
+/// Api to create and get payment installment
 /// </summary>
 [ApiVersion("1.0")]
 [Route("api/v{v:apiVersion}/paymentinstallment")]
@@ -25,10 +24,10 @@ public class PaymentInstallmentController : ControllerBase
     }
 
     /// <summary>
-    /// Action method returns the payment installment details based on the payment id passed.
+    /// Action method returns the payment installment details based on the payment id passed
     /// </summary>
-    /// <param name="id">payment id.</param>
-    /// <returns>Returns the list of installement details.</returns>
+    /// <param name="id">payment id</param>
+    /// <returns>Returns the list of installement details</returns>
     [HttpGet("{id:Guid}")]
     [ProducesResponseType(Status204NoContent)]
     [ProducesResponseType(typeof(PaymentPlanResponse), Status200OK)]
@@ -51,9 +50,9 @@ public class PaymentInstallmentController : ControllerBase
     }
 
     /// <summary>
-    /// Action method to create new payment installment based on the frequency and num of installement passed in request model.
+    /// Action method to create new payment installment based on the frequency and num of installement passed in request model
     /// </summary>
-    /// <param name="paymentPlanRequest">Model contains data to create installment plan.</param>
+    /// <param name="paymentPlanRequest">Model contains data to create installment plan</param>
     /// <remarks>
     /// Sample request:
     ///     POST api/v1/paymentinstallment
@@ -63,7 +62,7 @@ public class PaymentInstallmentController : ControllerBase
     ///         "Frequency": 14
     ///     }
     /// </remarks>
-    /// <returns>Returns the list of installement details.</returns>
+    /// <returns>Returns the payment installment plan</returns>
     [HttpPost]
     [ProducesResponseType(Status400BadRequest)]
     [ProducesResponseType(Status204NoContent)]
@@ -82,7 +81,6 @@ public class PaymentInstallmentController : ControllerBase
         else
         {
             logger.LogInformation($"Create payment installment plan api called.");
-            logger.LogDebug($"Payment installment plan request body: {JsonSerializer.Serialize(paymentPlanRequest)}");
 
             var payment = this.paymentInstallementPlan.CreatePaymentPlan(paymentPlanRequest);
 

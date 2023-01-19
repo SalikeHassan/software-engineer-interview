@@ -380,4 +380,106 @@
 ][2023-01-19 13:54:21.969 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 16.1476ms
 ][2023-01-19 13:54:21.969 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
 ][2023-01-19 13:54:21.969 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/api/v1/paymentinstallment/374b3b55-03a3-4488-bd1f-5a61cc35f8f5 - - - 200 - application/json;+charset=utf-8 39.8972ms
+][2023-01-19 18:01:27.144 +05:30 [INF] Now listening on: https://localhost:7188
+][2023-01-19 18:01:27.276 +05:30 [INF] Now listening on: http://localhost:5199
+][2023-01-19 18:01:27.289 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+][2023-01-19 18:01:27.290 +05:30 [INF] Hosting environment: Development
+][2023-01-19 18:01:27.290 +05:30 [INF] Content root path: C:\Users\hassa\source\repos\SalikeHassan\software-engineer-interview\SoftwareEngineerInterview\CSharp\Zip.InstallmentsService\Zip.Installment.Api\
+][2023-01-19 18:01:37.275 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-19 18:01:37.275 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/index.html - -
+][2023-01-19 18:01:37.275 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-19 18:01:37.313 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 44.9881ms
+][2023-01-19 18:01:37.888 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 622.1614ms
+][2023-01-19 18:01:38.082 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-19 18:01:38.363 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/index.html - - - 200 - text/html;charset=utf-8 1096.5254ms
+][2023-01-19 18:01:38.471 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-19 18:01:38.471 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 0.4518ms
+][2023-01-19 18:01:38.498 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-19 18:01:38.770 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 271.7258ms
+][2023-01-19 18:01:38.936 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 854.4892ms
+][2023-01-19 18:01:39.342 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-19 18:01:39.354 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.5052ms
+][2023-01-19 18:02:07.061 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 65
+][2023-01-19 18:02:07.125 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-19 18:02:07.213 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-19 18:02:10.546 +05:30 [INF] Create payment installment plan api called.
+][2023-01-19 18:02:17.195 +05:30 [INF] Saved 5 entities to in-memory store.
+][2023-01-19 18:02:17.795 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-19 18:02:17.920 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 10682.8993ms
+][2023-01-19 18:02:17.926 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-19 18:02:17.935 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 65 - 201 - application/json;+charset=utf-8 10874.0572ms
+][2023-01-19 18:02:39.403 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 65
+][2023-01-19 18:02:39.409 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-19 18:02:39.414 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-19 18:02:39.429 +05:30 [INF] Create payment installment plan api called.
+][2023-01-19 18:02:39.472 +05:30 [INF] Saved 7 entities to in-memory store.
+][2023-01-19 18:02:39.483 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-19 18:02:39.484 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 69.7665ms
+][2023-01-19 18:02:39.484 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-19 18:02:39.485 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 65 - 201 - application/json;+charset=utf-8 85.3006ms
+][2023-01-19 18:03:05.354 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 65
+][2023-01-19 18:03:05.363 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-19 18:03:05.375 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-19 18:03:05.458 +05:30 [INF] Create payment installment plan api called.
+][2023-01-19 18:03:05.565 +05:30 [INF] Saved 7 entities to in-memory store.
+][2023-01-19 18:03:05.579 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-19 18:03:05.584 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 207.276ms
+][2023-01-19 18:03:05.585 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-19 18:03:05.585 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 65 - 201 - application/json;+charset=utf-8 247.4920ms
+][2023-01-19 18:03:54.932 +05:30 [INF] Now listening on: https://localhost:7188
+][2023-01-19 18:03:55.005 +05:30 [INF] Now listening on: http://localhost:5199
+][2023-01-19 18:03:55.015 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+][2023-01-19 18:03:55.016 +05:30 [INF] Hosting environment: Development
+][2023-01-19 18:03:55.017 +05:30 [INF] Content root path: C:\Users\hassa\source\repos\SalikeHassan\software-engineer-interview\SoftwareEngineerInterview\CSharp\Zip.InstallmentsService\Zip.Installment.Api\
+][2023-01-19 18:03:58.197 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-19 18:03:58.201 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-19 18:03:58.216 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/index.html - -
+][2023-01-19 18:03:58.566 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 353.3742ms
+][2023-01-19 18:03:59.157 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 973.8701ms
+][2023-01-19 18:03:59.471 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-19 18:04:00.111 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 639.6970ms
+][2023-01-19 18:04:00.224 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/index.html - - - 200 - text/html;charset=utf-8 2007.1973ms
+][2023-01-19 18:04:00.346 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-19 18:04:00.348 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 1.4937ms
+][2023-01-19 18:04:00.385 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-19 18:04:01.170 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 785.1118ms
+][2023-01-19 18:04:01.302 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-19 18:04:01.313 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.4678ms
+][2023-01-19 18:04:19.505 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 65
+][2023-01-19 18:04:19.559 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-19 18:04:19.651 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-19 18:04:20.009 +05:30 [INF] Create payment installment plan api called.
+][2023-01-19 18:04:45.847 +05:30 [INF] Saved 7 entities to in-memory store.
+][2023-01-19 18:04:46.592 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-19 18:04:46.714 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 27053.1367ms
+][2023-01-19 18:04:46.717 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-19 18:04:46.728 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 65 - 201 - application/json;+charset=utf-8 27222.6214ms
+][2023-01-19 18:05:39.308 +05:30 [INF] Now listening on: https://localhost:7188
+][2023-01-19 18:05:39.368 +05:30 [INF] Now listening on: http://localhost:5199
+][2023-01-19 18:05:39.375 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+][2023-01-19 18:05:39.376 +05:30 [INF] Hosting environment: Development
+][2023-01-19 18:05:39.376 +05:30 [INF] Content root path: C:\Users\hassa\source\repos\SalikeHassan\software-engineer-interview\SoftwareEngineerInterview\CSharp\Zip.InstallmentsService\Zip.Installment.Api\
+][2023-01-19 18:05:42.351 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/index.html - -
+][2023-01-19 18:05:42.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-19 18:05:42.680 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 55.7475ms
+][2023-01-19 18:05:42.720 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-19 18:05:43.178 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 457.9430ms
+][2023-01-19 18:05:43.480 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-19 18:05:44.157 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-19 18:05:44.159 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 1.7659ms
+][2023-01-19 18:05:44.171 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-19 18:05:44.202 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/index.html - - - 200 - text/html;charset=utf-8 1874.5940ms
+][2023-01-19 18:05:44.640 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 468.8043ms
+][2023-01-19 18:05:44.667 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1187.4062ms
+][2023-01-19 18:05:46.203 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-19 18:05:46.208 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.5891ms
+][2023-01-19 18:06:13.261 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 65
+][2023-01-19 18:06:13.336 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-19 18:06:13.472 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-19 18:06:13.873 +05:30 [INF] Create payment installment plan api called.
+][2023-01-19 18:06:21.466 +05:30 [INF] Saved 5 entities to in-memory store.
+][2023-01-19 18:06:22.337 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-19 18:06:22.492 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 9007.8636ms
+][2023-01-19 18:06:22.495 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-19 18:06:22.506 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 65 - 201 - application/json;+charset=utf-8 9247.5180ms
 ]

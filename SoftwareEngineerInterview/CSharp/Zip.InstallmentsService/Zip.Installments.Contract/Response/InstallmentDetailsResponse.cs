@@ -6,17 +6,17 @@
 public class InstallmentDetailsResponse
 {
     /// <summary>
-    /// Due date.
+    ///Gets and Sets Due date
     /// </summary>
     public string DueDate { get; set; }
 
     /// <summary>
-    /// Due amount.
+    ///Gets and Sets Due amount
     /// </summary>
     public decimal DueAmount { get; set; }
 
     /// <summary>
-    /// Payment id.
+    ///Gets and Sets Payment id
     /// </summary>
     public Guid PaymentId { get; set; }
 }

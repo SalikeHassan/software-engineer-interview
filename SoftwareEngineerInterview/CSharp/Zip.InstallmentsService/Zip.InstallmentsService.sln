@@ -12,8 +12,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zip.Installments.Query", "Z
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zip.Installments.Command", "Zip.Installments.Command\Zip.Installments.Command.csproj", "{DEFD5FCD-50EA-4CD3-98D7-76E0743B4A6C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zip.Installments.Command.Test", "Zip.Installments.Command.Test\Zip.Installments.Command.Test.csproj", "{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zip.Installments.Infrastructure", "Zip.Installments.Infrastructure\Zip.Installments.Infrastructure.csproj", "{93D456D5-EA9F-4C88-8636-D26841B65A48}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zip.Installments.Common", "Zip.Installments.Common\Zip.Installments.Common.csproj", "{376F9D4E-9C4E-4B61-96D1-4255E49F5B34}"
@@ -92,18 +90,6 @@ Global
 		{DEFD5FCD-50EA-4CD3-98D7-76E0743B4A6C}.Release|x64.Build.0 = Release|Any CPU
 		{DEFD5FCD-50EA-4CD3-98D7-76E0743B4A6C}.Release|x86.ActiveCfg = Release|Any CPU
 		{DEFD5FCD-50EA-4CD3-98D7-76E0743B4A6C}.Release|x86.Build.0 = Release|Any CPU
-		{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}.Debug|x64.Build.0 = Debug|Any CPU
-		{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}.Debug|x86.Build.0 = Debug|Any CPU
-		{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}.Release|x64.ActiveCfg = Release|Any CPU
-		{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}.Release|x64.Build.0 = Release|Any CPU
-		{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}.Release|x86.ActiveCfg = Release|Any CPU
-		{6776B3BF-FB07-4A7D-988B-5E27675ADCE8}.Release|x86.Build.0 = Release|Any CPU
 		{93D456D5-EA9F-4C88-8636-D26841B65A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{93D456D5-EA9F-4C88-8636-D26841B65A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93D456D5-EA9F-4C88-8636-D26841B65A48}.Debug|x64.ActiveCfg = Debug|Any CPU

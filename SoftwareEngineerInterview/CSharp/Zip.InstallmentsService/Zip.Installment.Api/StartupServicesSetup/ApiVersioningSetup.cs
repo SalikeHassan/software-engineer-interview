@@ -1,7 +1,14 @@
 ﻿namespace Zip.Installments.Api.StartupServicesSetup;
 
+/// <summary>
+/// Class defines extension method for api versioning configuration
+/// </summary>
 public static class ApiVersioningSetup
 {
+    /// <summary>
+    /// Method adds service dependency for configuring API versioning 
+    /// </summary>
+    /// <param name="services"><see cref="IServiceCollection"/></param>
     public static void AddApiVersioningSetup(this IServiceCollection services)
     {
         services.AddApiVersioning(opt =>

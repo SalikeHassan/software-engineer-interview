@@ -1,7 +1,14 @@
 ﻿namespace Zip.Installments.Api.StartupServicesSetup;
 
+/// <summary>
+/// Class defines extension method for swagger service configuration
+/// </summary>
 public static class SwaggerSetup
 {
+    /// <summary>
+    /// Method adds service dependency for Swagger
+    /// </summary>
+    /// <param name="services"><see cref="IServiceCollection"/></param>
     public static void AddSwaggerSetup(this IServiceCollection services)
     {
         services.AddEndpointsApiExplorer();

@@ -1,7 +1,7 @@
 ﻿namespace Zip.Installments.Query.Queries;
 
 /// <summary>
-/// Class defines method to get the payment installment plan based on the payment id passed.
+/// Class defines method to get the payment installment plan based on the payment id passed
 /// </summary>
 public class GetPaymentInstallmentPlanByIdQuery : IRequest<PaymentPlanResponse>
 {
@@ -12,6 +12,9 @@ public class GetPaymentInstallmentPlanByIdQuery : IRequest<PaymentPlanResponse>
         this.id = id;
     }
 
+    /// <summary>
+    /// Method returns payment installment plan based on the payment id passed
+    /// </summary>
     public class GetPaymentInstallementPlanByIdQueryHandler : IRequestHandler<GetPaymentInstallmentPlanByIdQuery, PaymentPlanResponse>
     {
         private readonly ZipPayContext zipPayContext;

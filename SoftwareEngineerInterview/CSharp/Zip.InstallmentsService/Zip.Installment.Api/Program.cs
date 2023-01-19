@@ -31,6 +31,8 @@ public class Program
         //Problem details service configuration
         builder.Services.AddProblemDetailsSetup(environment);
 
+        builder.Services.AddTransient<IPaymentInstallementPlan, PaymentInstallmentPlan>();
+
         //Middleware configuration
         var app = builder.Build();
 

@@ -1,7 +1,7 @@
 ﻿namespace Zip.Installments.Command.Commands;
 
 /// <summary>
-/// Class defines method to create payment installment plan.
+/// Class defines method to create payment installment plan
 /// </summary>
 public class CreatePaymentInstallmentPlanCommand : IRequest<Guid>
 {
