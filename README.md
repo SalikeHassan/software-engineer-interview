@@ -1,15 +1,53 @@
 # Prerequisite To Run Code:
-[Download .Net6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)<br/>
-[Download VS Code](https://code.visualstudio.com/download)<br/>
+- [Download .Net6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)<br/>
+- [Download Visual Studio 2022 Community Version](https://code.visualstudio.com/download)<br/>
+- [Download Postman](https://www.postman.com/downloads/)<br/>
 
 # How to run code in VS Code?
-- Download or clone code from this repo
-- Open VS Code
-- Open folder ~\SoftwareEngineerInterview\CSharp\Zip.InstallmentsService in VS Code by clicking the menu File->Open Folder
-![image](https://user-images.githubusercontent.com/18566830/213638726-2b56d243-e1fd-4065-8eb2-a4176ec3edc2.png)
-- Open the new Terminal in vs code, by clicking then menu Terminal->New Terminal
-![image](https://user-images.githubusercontent.com/18566830/213639866-13660f05-bfe3-42c4-9d97-8dbfbd6845e3.png)
+- Download or clone code from this repo.
+- Open Visual Studio 2022.
+- Browse solution file from cloned folder.
+- Set Zip.Installment.Api as startup project.
+- Validate Serilog in appsettings.json. It should be as below in appsettings.json
+ ```
+   "Serilog": {
+    "using": [ "Serilog.Sinks.File" ],
+    "Minimumlevel": {
+      "Default": "Information"
+    },
+    "WriteTo": [
+      {
+        "Name": "File",
+        "Args": {
+          "Path": "Logs\\ApplicationLog.log",
+          "rollingInterval": "Day",
+          "outputTemplate": "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}]"
+        }
+      }
+    ]
+  }
+```
+- Once everything looks fine, Run project.
+- System will open swagger in browser window.
+- Click on Post request for /api/v1/paymentinstallment
+- System will expand the tab.
+- In tab, click on Try it out button.
+- Compose request body as below and click on execute button.
+```
+{
+  "amount": 2000,
+  "numofInstallment": 4,
+  "frequency": 14
+}
+```
+- In case of success, system will response as below.
+  ![image](https://user-images.githubusercontent.com/18566830/213654686-0b5c6d20-d387-4dfc-bfce-34b2c3a779ce.png)
 
+# Running Unit Test Cases:
+- In Visual Studio 2022, Click View --> select Test Explorer
+- System will open window as below
+  ![image](https://user-images.githubusercontent.com/18566830/213655277-6b1b90be-860c-4bd1-a14a-6d5c03288c4c.png)
+- Right click on Zip.Installments.ServiceTest and select run.
 
 
 
