@@ -3,12 +3,12 @@
 - [Download Visual Studio 2022 Community Version](https://code.visualstudio.com/download)<br/>
 - [Download Postman](https://www.postman.com/downloads/)<br/>
 
-# How to run code in VS Code?
+# How to run code in Visual Studio 2022?
 - Download or clone code from this repo.
 - Open Visual Studio 2022.
 - Browse solution file from cloned folder.
 - Set Zip.Installments.Api as startup project.
-- Validate Serilog in appsettings.json. It should be as below in appsettings.json
+- Validate Serilog in appsettings.json. It should be as below in appsettings.json.
  ```
    "Serilog": {
     "using": [ "Serilog.Sinks.File" ],
@@ -29,7 +29,7 @@
 ```
 - Once everything looks fine, Run project.
 - System will open swagger in browser window.
-- Click on Post request for /api/v1/paymentinstallment
+- Click on Post request for /api/v1/paymentinstallment .
 - System will expand the tab.
 - In tab, click on Try it out button.
 - Compose request body as below and click on execute button.
@@ -44,17 +44,17 @@
   ![image](https://user-images.githubusercontent.com/18566830/213654686-0b5c6d20-d387-4dfc-bfce-34b2c3a779ce.png)
 
 # Running Unit Test Cases:
-- In Visual Studio 2022, Click View --> select Test Explorer
-- System will open window as below
+- In Visual Studio 2022, Click View --> select Test Explorer.
+- System will open window as below.
   ![image](https://user-images.githubusercontent.com/18566830/213655277-6b1b90be-860c-4bd1-a14a-6d5c03288c4c.png)
 - Right click on Zip.Installments.ServiceTest and select run.
 
 # Running Integration Tests:
 - Open postman.
-- Click on import in top left hand side. It opens below pop-up window
+- Click on import in top left hand side. It opens below pop-up window.
  ![image](https://user-images.githubusercontent.com/18566830/213656020-6ff3f414-0b9c-4542-863e-0f3f9b9abbe3.png)
-- Click on choose file and select file Zip.Installments.IntegrationTest.postman_collection from Zip.InstallmentsService\Zip.Installments.IntegrationTest.postman_collection location.
-- System will show below screen. Click on import
+- Click on choose file and select file ZipCo.postman_collection from Zip.InstallmentsService\Zip.Installments.IntegrationTest.postman_collection location.
+- System will show below screen. Click on import.
 ![image](https://user-images.githubusercontent.com/18566830/213656595-926716ae-933a-4bef-9c37-fa0c43d8051b.png)
 - Once collection is imported --> Right click on collection and click on Run collection.
 ![image](https://user-images.githubusercontent.com/18566830/213658779-70ba7ba2-b481-4f43-8f47-d6d5ec39985b.png)
@@ -80,11 +80,161 @@
 - 7.Zip.Installments.Query:<br>
   This project contains the logic to retrieve payment and payment installment plan data from database.
 - 8.Zip.Installments.Service:<br>
-  This Project contains the logic of business requirement.
+  This project contains the logic of business requirement.
 - 9.Zip.Installments.ServiceTest:<br>
   This project contains the unit test cases.
 
+# Assumption:
+1. Minimum value for purchase amount will be $1.
+2. Min value for number of installments is 1.
+3. Min value for frequency is 1.
 
+# Api details:
+## Create payment installment API details
+1. Create payment.<br>
+<table>
+  <tr>
+    <td>Request Url</td>
+    <td>https://localhost:7188/api/v1/paymentinstallment</td>
+  </tr>
+   <tr>
+    <td>Request Type</td>
+    <td>Post</td>
+  </tr>
+   <tr>
+    <td>Request headers</td>
+     <td>
+      <ol>
+        <li>accept:application/json</li>
+        <li>Content-Type=application/json; Version=1.0</li>
+      </ol>  
+    </td>
+  </tr>
+</table>
+
+2. Sample request body.<br>
+```
+{
+  "amount": 1000,
+  "numofInstallment": 4,
+  "frequency": 15
+}
+```
+3. Sample response body.<br>
+ ```
+ {
+    "id": "68468ed5-d587-41ec-8cb8-95ab7e163c81",
+    "amount": 1000,
+    "installments": [
+        {
+            "dueDate": "01/20/2023",
+            "dueAmount": 250,
+            "paymentId": "68468ed5-d587-41ec-8cb8-95ab7e163c81"
+        },
+        {
+            "dueDate": "02/04/2023",
+            "dueAmount": 250,
+            "paymentId": "68468ed5-d587-41ec-8cb8-95ab7e163c81"
+        },
+        {
+            "dueDate": "02/19/2023",
+            "dueAmount": 250,
+            "paymentId": "68468ed5-d587-41ec-8cb8-95ab7e163c81"
+        },
+        {
+            "dueDate": "03/06/2023",
+            "dueAmount": 250,
+            "paymentId": "68468ed5-d587-41ec-8cb8-95ab7e163c81"
+        }
+    ]
+}
+```
+4. Curl request.
+```
+curl -X 'POST' \
+  'https://localhost:7188/api/v1/paymentinstallment' \
+  -H 'accept: text/plain' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "amount": 1000,
+  "numofInstallment": 4,
+  "frequency": 15
+}'
+```
+## Get payment installment API details
+1. Get payment installment plan details by id.<br>
+<table>
+  <tr>
+    <td>Request Url</td>
+    <td>https://localhost:7188/api/v1/paymentinstallment</td>
+  </tr>
+   <tr>
+    <td>Request Type</td>
+    <td>Get</td>
+  </tr>
+   <tr>
+    <td>Request Headers</td>
+     <td>
+      <ol>
+        <li>accept:application/json</li>
+      </ol>  
+    </td>
+  </tr>
+</table>
+
+2. Sample response body.<br>
+```
+{
+    "id": "07db911b-533d-492a-93bd-eb428bec27ea",
+    "amount": 2400,
+    "installments": [
+        {
+            "dueDate": "01/20/2023",
+            "dueAmount": 600,
+            "paymentId": "07db911b-533d-492a-93bd-eb428bec27ea"
+        },
+        {
+            "dueDate": "02/03/2023",
+            "dueAmount": 600,
+            "paymentId": "07db911b-533d-492a-93bd-eb428bec27ea"
+        },
+        {
+            "dueDate": "02/17/2023",
+            "dueAmount": 600,
+            "paymentId": "07db911b-533d-492a-93bd-eb428bec27ea"
+        },
+        {
+            "dueDate": "03/03/2023",
+            "dueAmount": 600,
+            "paymentId": "07db911b-533d-492a-93bd-eb428bec27ea"
+        }
+    ]
+}
+```
+3. Parameters details.
+<table>
+  <tr>
+    <td>Url Parameter</td>
+    <td>Payment plan id</td>
+  </tr>
+   <tr>
+    <td>Data Type</td>
+    <td>Guid</td>
+  </tr>
+   <tr>
+    <td>Comment</td>
+     <td>
+       Payment plan id 
+    </td>
+  </tr>
+</table>
+
+4. Curl request.
+```
+curl -X 'GET' \
+  'https://localhost:7188/api/v1/paymentinstallment/07db911b-533d-492a-93bd-eb428bec27ea' \
+  -H 'accept: text/plain'
+```
 # Zip Software Engineer Interview
 
 ## Overview
