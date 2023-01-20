@@ -41,9 +41,9 @@
 2. Min value for number of installments is 1.
 3. Min value for frequency is 1.
 
-## Steps to create and get payment installment plan:
+## Steps to Create and Get Payment Installment Plan:
 #### Create payment installment API details
-1. Run the project and go to swagger ui in browser and click on the Post /api/v1/paymentinstallment section, and then click on Try it out button as shown in the below screenshot.
+1. Run the project and go to swagger ui in browser and click on the POST /api/v1/paymentinstallment section, and then click on Try it out button as shown in the below screenshot.
 ![image](https://user-images.githubusercontent.com/18566830/213718696-1a80a7fc-c25e-4736-b425-a9a330d2c6dc.png)
 
 2. Provide the below request body and click on the Execute button as shown in below screenshot.
