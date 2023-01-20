@@ -7,11 +7,11 @@
 ## How to run code in Visual Studio 2022?
 - Download or clone code from this repo.
 - Open Visual Studio 2022.
-- Browse solution file from cloned folder.
-- Set Zip.Installments.Api as startup project as shown below screenshot.
+- Browse solution file from the cloned folder.
+- Set Zip.Installments.Api as startup project as shown in the below screenshot.
   ![image](https://user-images.githubusercontent.com/18566830/213714130-9d2efc3e-0255-45ab-96c4-2b5f9f258355.png)
 
-- Configure serilog in appsettings.json as below.
+- Configure serilog in appsettings.json as below. Skip the below step if the serilog configuration already present in appsettings.json file.
  ```
    "Serilog": {
     "using": [ "Serilog.Sinks.File" ],
@@ -30,10 +30,10 @@
     ]
   }
 ```
-- After the above steps completed, run the project by clicking on Zip.Installments.Api button as shown in below screenshot.
+- After the above steps completed, run the project by clicking on Zip.Installments.Api button as shown in the below screenshot.
   ![image](https://user-images.githubusercontent.com/18566830/213715132-d27ffe7e-f2d9-4f11-8a0c-3dd14c277ff1.png)
 
-- On successfull run of the project, swagger ui will open in browser as shown in the below screenshot.
+- On successfull run of the project, swagger ui will open in the browser as shown in the below screenshot.
  ![image](https://user-images.githubusercontent.com/18566830/213716346-b2560090-0e64-47f0-af9f-15c0b72707e7.png)
 
 ## Assumption:
@@ -43,10 +43,10 @@
 
 ## Steps to Create and Get Payment Installment Plan:
 #### Create payment installment API details
-1. Run the project and go to swagger ui in browser and click on the POST /api/v1/paymentinstallment section, and then click on Try it out button as shown in the below screenshot.
+1. Run the project and go to swagger ui in the browser and click on the POST /api/v1/paymentinstallment section, and then click on Try it out button as shown in the below screenshot.
 ![image](https://user-images.githubusercontent.com/18566830/213718696-1a80a7fc-c25e-4736-b425-a9a330d2c6dc.png)
 
-2. Provide the below request body and click on the Execute button as shown in below screenshot.
+2. Provide the below request body and click on the Execute button as shown in the below screenshot.
 ```
 {
   "amount": 1000,
@@ -63,9 +63,9 @@ After the successfull Post request API will return the details of payment instal
 1. In swagger ui click on GET /api/v1/paymentinstallment/{id} section, and then click on Try it out button as shown in the below screenshot.
   ![image](https://user-images.githubusercontent.com/18566830/213723013-3085d57a-a2f3-43ed-b5b7-6d4ec357b165.png)
   
-2. Provide the id of payment plan id, the below screenshot shows an example of id created when a payment installment plan created through POST request.
+2. Provide the payment plan id, the below screenshot shows an example of the id created when a payment installment plan created through POST request.
 <img width="925" alt="image" src="https://user-images.githubusercontent.com/18566830/213723970-933a8412-f8dd-4cae-87e1-09c203c5aa2a.png">
-Provide the id in textbox and then click on execute button, as shown in below screenshot.<br>
+Provide the id in the textbox and then click on execute button, as shown in the below screenshot.<br>
 <img width="925" alt="image" src="https://user-images.githubusercontent.com/18566830/213724370-bd3b3996-4e14-4d07-b899-867ed7d06dbc.png">
 For the valid id API will return the payment plan and installment plan as shown in the below screenshot.<br>
 <img width="925" alt="image" src="https://user-images.githubusercontent.com/18566830/213724781-ae12289b-752a-4168-beff-f75c61c849ef.png">
@@ -74,13 +74,13 @@ For the valid id API will return the payment plan and installment plan as shown 
 - In Visual Studio 2022, Click View --> select Test Explorer, as shown in below screenshot.
   ![image](https://user-images.githubusercontent.com/18566830/213725986-a6d719b5-3a59-4f3e-8f64-22bd071c2626.png)
 
-- System will open window as shown in below screenshot.
+- System will open window as shown in the below screenshot.
   ![image](https://user-images.githubusercontent.com/18566830/213655277-6b1b90be-860c-4bd1-a14a-6d5c03288c4c.png)
 - Right click on Zip.Installments.ServiceTest and select run to run the unit test cases.
 
 ## Steps to Run the Integration Tests Using Postman:
 - Open postman.
-- Click on import in top left hand side. It opens below pop-up window.
+- Click on import in top left hand side. It opens pop-up window as shown in the below screenshot.
  ![image](https://user-images.githubusercontent.com/18566830/213656020-6ff3f414-0b9c-4542-863e-0f3f9b9abbe3.png)
 - Click on choose file and select file ZipCo.postman_collection from Zip.InstallmentsService\Zip.Installments.IntegrationTest.postman_collection location.
 - System will show below screen. Click on import.
@@ -141,7 +141,7 @@ InstallmentDetailsResponse
   paymentId	string($uuid)
 }
 ```
-## Nugets Packages Used:
+## Nuget Packages Used in the Project:
 1. AutoFixture
 2. FluentValidation.AspNetCore
 3. FluentValidation.DependencyInjectionExtensions
