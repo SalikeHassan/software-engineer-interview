@@ -8,8 +8,10 @@
 - Download or clone code from this repo.
 - Open Visual Studio 2022.
 - Browse solution file from cloned folder.
-- Set Zip.Installments.Api as startup project.
-- Validate Serilog in appsettings.json. It should be as below in appsettings.json.
+- Set Zip.Installments.Api as startup project as shown below screenshot
+  ![image](https://user-images.githubusercontent.com/18566830/213714130-9d2efc3e-0255-45ab-96c4-2b5f9f258355.png)
+
+- Configure serilog in appsettings.json as below.
  ```
    "Serilog": {
     "using": [ "Serilog.Sinks.File" ],
@@ -28,92 +30,23 @@
     ]
   }
 ```
-- Once everything looks fine, Run project.
-- System will open swagger in browser window.
-- Click on Post request for /api/v1/paymentinstallment .
-- System will expand the tab.
-- In tab, click on Try it out button.
-- Compose request body as below and click on execute button.
-```
-{
-  "amount": 2000,
-  "numofInstallment": 4,
-  "frequency": 14
-}
-```
-- In case of success, system will response as below.
-  ![image](https://user-images.githubusercontent.com/18566830/213654686-0b5c6d20-d387-4dfc-bfce-34b2c3a779ce.png)
+- After the above steps completed, run the project by clicking on Zip.Installments.Api button as shown in below screenshot.
+  ![image](https://user-images.githubusercontent.com/18566830/213715132-d27ffe7e-f2d9-4f11-8a0c-3dd14c277ff1.png)
 
-## Running Unit Test Cases:
-- In Visual Studio 2022, Click View --> select Test Explorer.
-- System will open window as below.
-  ![image](https://user-images.githubusercontent.com/18566830/213655277-6b1b90be-860c-4bd1-a14a-6d5c03288c4c.png)
-- Right click on Zip.Installments.ServiceTest and select run.
-
-## Running Integration Tests:
-- Open postman.
-- Click on import in top left hand side. It opens below pop-up window.
- ![image](https://user-images.githubusercontent.com/18566830/213656020-6ff3f414-0b9c-4542-863e-0f3f9b9abbe3.png)
-- Click on choose file and select file ZipCo.postman_collection from Zip.InstallmentsService\Zip.Installments.IntegrationTest.postman_collection location.
-- System will show below screen. Click on import.
-![image](https://user-images.githubusercontent.com/18566830/213656595-926716ae-933a-4bef-9c37-fa0c43d8051b.png)
-- Once collection is imported --> Right click on collection and click on Run collection.
-![image](https://user-images.githubusercontent.com/18566830/213658779-70ba7ba2-b481-4f43-8f47-d6d5ec39985b.png)
-- Click on Run ZipCo button.
- ![image](https://user-images.githubusercontent.com/18566830/213659045-c8b05065-e6db-489e-b416-30c366948c51.png)
-- System will run the integration test and show results as below.
- ![image](https://user-images.githubusercontent.com/18566830/213659390-c66e40f3-1130-4f39-969f-d1e0192ff85d.png)
-
-## Design:
-- This system is designed using clean architecture. Below are the sub-component of this application.
-- 1.Zip.Installments.Api:<br>
-  This is project contains logic for payment installment plan.
-- 2.Zip.Installments.Command:<br>
-  This project contains logic to create payment and payment installment plan in database.
-- 3.Zip.Installments.Common:<br>
-  This project contains common functionalities which are used across projects.
-- 4.Zip.Installments.Contract:<br>
-  This project contains classes for API request body mapping and response.
-- 5.Zip.Installments.Domain:<br>
-  This project contains classes which defines the tables of payment and payment intallment plan.
-- 6.Zip.Installments.Infrastructure:<br>
-  This project contains classes to define database context object and domain classes configuration.
-- 7.Zip.Installments.Query:<br>
-  This project contains the logic to retrieve payment and payment installment plan data from database.
-- 8.Zip.Installments.Service:<br>
-  This project contains the logic of business requirement.
-- 9.Zip.Installments.ServiceTest:<br>
-  This project contains the unit test cases.
+- On successfull run of the project, swagger ui will open in browser as shown in the below screenshot.
+ ![image](https://user-images.githubusercontent.com/18566830/213716346-b2560090-0e64-47f0-af9f-15c0b72707e7.png)
 
 ## Assumption:
 1. Minimum value for purchase amount will be $1.
 2. Min value for number of installments is 1.
 3. Min value for frequency is 1.
 
-## Api details:
+## Steps to create and get payment installment plan:
 #### Create payment installment API details
-1. Create payment.<br>
-<table>
-  <tr>
-    <td>Request Url</td>
-    <td>https://localhost:7188/api/v1/paymentinstallment</td>
-  </tr>
-   <tr>
-    <td>Request Type</td>
-    <td>Post</td>
-  </tr>
-   <tr>
-    <td>Request headers</td>
-     <td>
-      <ol>
-        <li>accept:application/json</li>
-        <li>Content-Type=application/json; Version=1.0</li>
-      </ol>  
-    </td>
-  </tr>
-</table>
+1. Run the project and go to swagger ui in browser and click on the Post /api/v1/paymentinstallment section, and then click on Try it out button as shown in the below screenshot.
+![image](https://user-images.githubusercontent.com/18566830/213718696-1a80a7fc-c25e-4736-b425-a9a330d2c6dc.png)
 
-2. Sample request body.<br>
+2. Provide the below request body and click on the Execute button as shown in below screenshot.
 ```
 {
   "amount": 1000,
@@ -121,47 +54,11 @@
   "frequency": 15
 }
 ```
-3. Sample response body.<br>
- ```
- {
-    "id": "68468ed5-d587-41ec-8cb8-95ab7e163c81",
-    "amount": 1000,
-    "installments": [
-        {
-            "dueDate": "01/20/2023",
-            "dueAmount": 250,
-            "paymentId": "68468ed5-d587-41ec-8cb8-95ab7e163c81"
-        },
-        {
-            "dueDate": "02/04/2023",
-            "dueAmount": 250,
-            "paymentId": "68468ed5-d587-41ec-8cb8-95ab7e163c81"
-        },
-        {
-            "dueDate": "02/19/2023",
-            "dueAmount": 250,
-            "paymentId": "68468ed5-d587-41ec-8cb8-95ab7e163c81"
-        },
-        {
-            "dueDate": "03/06/2023",
-            "dueAmount": 250,
-            "paymentId": "68468ed5-d587-41ec-8cb8-95ab7e163c81"
-        }
-    ]
-}
-```
-4. Curl request.
-```
-curl -X 'POST' \
-  'https://localhost:7188/api/v1/paymentinstallment' \
-  -H 'accept: text/plain' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "amount": 1000,
-  "numofInstallment": 4,
-  "frequency": 15
-}'
-```
+![image](https://user-images.githubusercontent.com/18566830/213720888-6107b4e4-ece2-4bba-a080-a9c9259f1fb7.png)
+
+After the successfull Post request API will return the details of payment installment plan, as shown in the below screenshot <br>
+![image](https://user-images.githubusercontent.com/18566830/213721529-bc0c48ff-3ec5-4e83-98f9-c15ae8c8ce87.png)
+
 #### Get payment installment API details
 1. Get payment installment plan details by id.<br>
 <table>
@@ -236,6 +133,46 @@ curl -X 'GET' \
   'https://localhost:7188/api/v1/paymentinstallment/07db911b-533d-492a-93bd-eb428bec27ea' \
   -H 'accept: text/plain'
 ```
+## Running Unit Test Cases:
+- In Visual Studio 2022, Click View --> select Test Explorer.
+- System will open window as below.
+  ![image](https://user-images.githubusercontent.com/18566830/213655277-6b1b90be-860c-4bd1-a14a-6d5c03288c4c.png)
+- Right click on Zip.Installments.ServiceTest and select run.
+
+## Running Integration Tests:
+- Open postman.
+- Click on import in top left hand side. It opens below pop-up window.
+ ![image](https://user-images.githubusercontent.com/18566830/213656020-6ff3f414-0b9c-4542-863e-0f3f9b9abbe3.png)
+- Click on choose file and select file ZipCo.postman_collection from Zip.InstallmentsService\Zip.Installments.IntegrationTest.postman_collection location.
+- System will show below screen. Click on import.
+![image](https://user-images.githubusercontent.com/18566830/213656595-926716ae-933a-4bef-9c37-fa0c43d8051b.png)
+- Once collection is imported --> Right click on collection and click on Run collection.
+![image](https://user-images.githubusercontent.com/18566830/213658779-70ba7ba2-b481-4f43-8f47-d6d5ec39985b.png)
+- Click on Run ZipCo button.
+ ![image](https://user-images.githubusercontent.com/18566830/213659045-c8b05065-e6db-489e-b416-30c366948c51.png)
+- System will run the integration test and show results as below.
+ ![image](https://user-images.githubusercontent.com/18566830/213659390-c66e40f3-1130-4f39-969f-d1e0192ff85d.png)
+
+## Design:
+- This system is designed using clean architecture. Below are the sub-component of this application.
+- 1.Zip.Installments.Api:<br>
+  This is project contains logic for payment installment plan.
+- 2.Zip.Installments.Command:<br>
+  This project contains logic to create payment and payment installment plan in database.
+- 3.Zip.Installments.Common:<br>
+  This project contains common functionalities which are used across projects.
+- 4.Zip.Installments.Contract:<br>
+  This project contains classes for API request body mapping and response.
+- 5.Zip.Installments.Domain:<br>
+  This project contains classes which defines the tables of payment and payment intallment plan.
+- 6.Zip.Installments.Infrastructure:<br>
+  This project contains classes to define database context object and domain classes configuration.
+- 7.Zip.Installments.Query:<br>
+  This project contains the logic to retrieve payment and payment installment plan data from database.
+- 8.Zip.Installments.Service:<br>
+  This project contains the logic of business requirement.
+- 9.Zip.Installments.ServiceTest:<br>
+  This project contains the unit test cases.
 
 ## Techonology and Nugets used:
 1. .Net 6
