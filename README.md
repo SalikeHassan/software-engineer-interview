@@ -89,7 +89,7 @@ For the valid id API will return the payment plan and installment plan as shown 
 ![image](https://user-images.githubusercontent.com/18566830/213658779-70ba7ba2-b481-4f43-8f47-d6d5ec39985b.png)
 - Click on Run ZipCo button.
  ![image](https://user-images.githubusercontent.com/18566830/213659045-c8b05065-e6db-489e-b416-30c366948c51.png)
-- System will run the integration test and show results as below.
+- Postman will run the integration test and show results as shown in the below screenshot.
  ![image](https://user-images.githubusercontent.com/18566830/213659390-c66e40f3-1130-4f39-969f-d1e0192ff85d.png)
 
 ## Project Solution Design:
