@@ -1,4 +1,4 @@
-# Prerequisite To Run Code:
+# Prerequisite to Run Code:
 - [Download .Net6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)<br/>
 - [Download Visual Studio 2022 Community Version](https://code.visualstudio.com/download)<br/>
 - [Download Postman](https://www.postman.com/downloads/)<br/>
