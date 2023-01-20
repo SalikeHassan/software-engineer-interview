@@ -1,9 +1,10 @@
-# Prerequisite to Run Code:
-- [Download .Net6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)<br/>
+# Zip Software Engineer Interview
+
+## Prerequisite to Run Code:
 - [Download Visual Studio 2022 Community Version](https://code.visualstudio.com/download)<br/>
 - [Download Postman](https://www.postman.com/downloads/)<br/>
 
-# How to run code in Visual Studio 2022?
+## How to run code in Visual Studio 2022?
 - Download or clone code from this repo.
 - Open Visual Studio 2022.
 - Browse solution file from cloned folder.
@@ -43,13 +44,13 @@
 - In case of success, system will response as below.
   ![image](https://user-images.githubusercontent.com/18566830/213654686-0b5c6d20-d387-4dfc-bfce-34b2c3a779ce.png)
 
-# Running Unit Test Cases:
+## Running Unit Test Cases:
 - In Visual Studio 2022, Click View --> select Test Explorer.
 - System will open window as below.
   ![image](https://user-images.githubusercontent.com/18566830/213655277-6b1b90be-860c-4bd1-a14a-6d5c03288c4c.png)
 - Right click on Zip.Installments.ServiceTest and select run.
 
-# Running Integration Tests:
+## Running Integration Tests:
 - Open postman.
 - Click on import in top left hand side. It opens below pop-up window.
  ![image](https://user-images.githubusercontent.com/18566830/213656020-6ff3f414-0b9c-4542-863e-0f3f9b9abbe3.png)
@@ -63,7 +64,7 @@
 - System will run the integration test and show results as below.
  ![image](https://user-images.githubusercontent.com/18566830/213659390-c66e40f3-1130-4f39-969f-d1e0192ff85d.png)
 
-# Design:
+## Design:
 - This system is designed using clean architecture. Below are the sub-component of this application.
 - 1.Zip.Installments.Api:<br>
   This is project contains logic for payment installment plan.
@@ -84,13 +85,13 @@
 - 9.Zip.Installments.ServiceTest:<br>
   This project contains the unit test cases.
 
-# Assumption:
+## Assumption:
 1. Minimum value for purchase amount will be $1.
 2. Min value for number of installments is 1.
 3. Min value for frequency is 1.
 
-# Api details:
-## Create payment installment API details
+## Api details:
+#### Create payment installment API details
 1. Create payment.<br>
 <table>
   <tr>
@@ -161,7 +162,7 @@ curl -X 'POST' \
   "frequency": 15
 }'
 ```
-## Get payment installment API details
+#### Get payment installment API details
 1. Get payment installment plan details by id.<br>
 <table>
   <tr>
@@ -235,8 +236,30 @@ curl -X 'GET' \
   'https://localhost:7188/api/v1/paymentinstallment/07db911b-533d-492a-93bd-eb428bec27ea' \
   -H 'accept: text/plain'
 ```
-# Zip Software Engineer Interview
 
+## Techonology and Nugets used:
+1. .Net 6
+2. AutoFixture
+3. FluentValidation.AspNetCore
+4. FluentValidation.DependencyInjectionExtensions
+5. Hellang.Middleware.ProblemDetails
+6. MediatR
+7. MediatR.Extensions.Microsoft.DependencyInjection
+8. Microsoft.AspNetCore.Mvc.Versioning
+9. Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer
+10. Microsoft.EntityFrameworkCore
+11. Microsoft.EntityFrameworkCore.Design
+12. Microsoft.EntityFrameworkCore.InMemory
+13. Microsoft.EntityFrameworkCore.Tools
+14. Microsoft.NET.Test.Sdk
+15. Moq
+16. NUnit
+17. NUnit.Analyzers
+18. NUnit3TestAdapter
+19. Serilog.AspNetCore
+20. Swashbuckle.AspNetCore
+
+## Note: Below is the problem statement.
 ## Overview
 
 Zip is a payment gateway that lets consumers split purchases into 4 interest free installments, every two weeks. The first 25% is taken when the purchase is made, and the remaining 3 installments of 25% are automatically taken every 14 days. We help customers manage their cash-flow while helping merchants increase conversion rates and average order values.
