@@ -31,7 +31,7 @@ public class PaymentInstallmentPlanTest
         var paymentPlanRequest = new PaymentPlanRequest()
         {
             Amount = amount,
-            NumofInstallement = numOfInstallement,
+            NumofInstallment = numOfInstallement,
             Frequency = frequency
         };
 

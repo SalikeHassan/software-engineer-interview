@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "43faefbf-24a1-49a9-af4c-3e21d9da6d93",
+		"name": "ZipCo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3056786"
+	},
+	"item": [
+		{
+			"name": "CreatePaymentInstallmentPlanSuccessfull_Post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verify payment installment plan created with status code is 201\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([201]);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify amount must be equal to 1000\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.amount).to.eql(1000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify 3 installments payment plan created\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.installments.length).to.eql(3);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify Due amount is equal to 333.33\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.installments[0].dueAmount).to.eql(333.33);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": 1000,\r\n  \"numofInstallment\": 3,\r\n  \"frequency\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7188/api/v1/paymentinstallment",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7188",
+					"path": [
+						"api",
+						"v1",
+						"paymentinstallment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePaymentInstallmentPlan_AmountValidationMessage_Post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verify payment installment plan not created with status code is 400\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([400]);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify validation error message must be equal to 'Amount must be greater than 0.'\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.errors.Amount[0]).to.eql(\"Amount must be greater than 0.\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": -1000,\r\n  \"numofInstallment\": 3,\r\n  \"frequency\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7188/api/v1/paymentinstallment",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7188",
+					"path": [
+						"api",
+						"v1",
+						"paymentinstallment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePaymentInstallmentPlan_NumofInstallmentValidationMessage_Post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verify payment installment plan not created with status code is 400\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([400]);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify validation error message must be equal to 'Number of installment must be greater than 0.'\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.errors.NumofInstallment[0]).to.eql(\"Number of installment must be greater than 0.\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": 1000,\r\n  \"numofInstallment\": -3,\r\n  \"frequency\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7188/api/v1/paymentinstallment",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7188",
+					"path": [
+						"api",
+						"v1",
+						"paymentinstallment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePaymentInstallmentPlan_FrequencyValidationMessage_Post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verify payment installment plan not created with status code is 400\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([400]);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify validation error message must be equal to 'Frequency must be greater than 0.'\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.errors.Frequency[0]).to.eql(\"Frequency must be greater than 0.\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": 1000,\r\n  \"numofInstallment\": 4,\r\n   \"frequency\": -15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7188/api/v1/paymentinstallment",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7188",
+					"path": [
+						"api",
+						"v1",
+						"paymentinstallment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPaymentInstallmentPlanById_Get",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.sendRequest({\r",
+							"url: 'https://localhost:7188/api/v1/paymentinstallment',\r",
+							"method: 'POST',\r",
+							"header: {\"Content-Type\": \"application/json\"},\r",
+							"body: { \r",
+							"    mode: 'raw',\r",
+							"    raw:JSON.stringify(\r",
+							"            {\r",
+							"            \"amount\":2400,\r",
+							"            \"numofInstallment\":4,\r",
+							"            \"frequency\":14\r",
+							"            }   \r",
+							"        )\r",
+							"    }  \r",
+							"}, \r",
+							"\r",
+							"function (err, response) \r",
+							"{ \r",
+							"    pm.environment.set(\"id\",response.json().id);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verify status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify amount must be equal to 2400\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.amount).to.eql(2400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify payment installment should be 4\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.installments.length).to.eql(4);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7188/api/v1/paymentinstallment/{{id}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7188",
+					"path": [
+						"api",
+						"v1",
+						"paymentinstallment",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

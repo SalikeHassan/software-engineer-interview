@@ -13,7 +13,7 @@ public class PaymentPlanRequest
     /// <summary>
     ///Gets and Set Number of installment
     /// </summary>
-    public int NumofInstallement { get; set; }
+    public int NumofInstallment { get; set; }
 
     /// <summary>
     ///Gets and Sets Frequency of installment

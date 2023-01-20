@@ -20,13 +20,13 @@ public class PaymentInstallmentPlan : IPaymentInstallementPlan
         var payment = new Payment();
         payment.Amount = paymentPlanRequest.Amount;
 
-        var installmentAmount = Math.Round(paymentPlanRequest.Amount / paymentPlanRequest.NumofInstallement,
+        var installmentAmount = Math.Round(paymentPlanRequest.Amount / paymentPlanRequest.NumofInstallment,
             Constants.RoundOffValue,
             MidpointRounding.ToEven);
 
-        payment.InstallmentPlans = Enumerable.Range(0, paymentPlanRequest.NumofInstallement).Select(iteration => new InstallmentPlan()
+        payment.InstallmentPlans = Enumerable.Range(0, paymentPlanRequest.NumofInstallment).Select(iteration => new InstallmentPlan()
         {
-            DueAmount = iteration == paymentPlanRequest.NumofInstallement - 1 ? AddTheRoundOffDifferenceAmountInLastEmi(installmentAmount, paymentPlanRequest.Amount, paymentPlanRequest.NumofInstallement) : installmentAmount,
+            DueAmount = iteration == paymentPlanRequest.NumofInstallment - 1 ? AddTheRoundOffDifferenceAmountInLastEmi(installmentAmount, paymentPlanRequest.Amount, paymentPlanRequest.NumofInstallment) : installmentAmount,
             DueDate = iteration == 0 ? DateTimeOffset.UtcNow : DateTimeOffset.UtcNow.AddDays(paymentPlanRequest.Frequency * iteration)
         }).ToList();
 

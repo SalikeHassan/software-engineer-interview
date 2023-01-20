@@ -1,0 +1,880 @@
+[2023-01-20 10:31:21.691 +05:30 [INF] Now listening on: https://localhost:7188
+][2023-01-20 10:31:21.778 +05:30 [INF] Now listening on: http://localhost:5199
+][2023-01-20 10:31:21.794 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+][2023-01-20 10:31:21.796 +05:30 [INF] Hosting environment: Development
+][2023-01-20 10:31:21.796 +05:30 [INF] Content root path: C:\Users\hassa\Source\Repos\SalikeHassan\software-engineer-interview\SoftwareEngineerInterview\CSharp\Zip.InstallmentsService\Zip.Installment.Api\
+][2023-01-20 10:31:25.941 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/index.html - -
+][2023-01-20 10:31:26.159 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-20 10:31:26.201 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-20 10:31:26.378 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 216.6576ms
+][2023-01-20 10:31:27.325 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1123.9524ms
+][2023-01-20 10:31:27.513 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-20 10:31:27.998 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/index.html - - - 200 - text/html;charset=utf-8 2071.1016ms
+][2023-01-20 10:31:28.046 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-20 10:31:28.049 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 2.7510ms
+][2023-01-20 10:31:28.058 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 545.4380ms
+][2023-01-20 10:31:28.084 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-20 10:31:28.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 351.3538ms
+][2023-01-20 10:31:28.618 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-20 10:31:28.629 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.1927ms
+][2023-01-20 10:33:22.125 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 65
+][2023-01-20 10:33:22.143 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:33:22.215 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:33:22.486 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 10:33:24.522 +05:30 [INF] Saved 3 entities to in-memory store.
+][2023-01-20 10:33:25.302 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 10:33:25.430 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 3205.0398ms
+][2023-01-20 10:33:25.431 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:33:25.452 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 65 - 201 - application/json;+charset=utf-8 3327.1560ms
+][2023-01-20 10:34:06.457 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 10:34:06.492 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:34:06.492 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:34:06.496 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 10:34:06.528 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 10:34:06.534 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 10:34:06.535 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 42.1382ms
+][2023-01-20 10:34:06.535 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:34:06.535 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 201 - application/json;+charset=utf-8 78.5043ms
+][2023-01-20 10:35:37.817 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 10:35:37.819 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:35:37.819 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:35:37.828 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 10:35:37.848 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 10:35:37.849 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 10:35:37.850 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 30.0877ms
+][2023-01-20 10:35:37.850 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:35:37.850 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 201 - application/json;+charset=utf-8 32.7229ms
+][2023-01-20 10:37:23.001 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 10:37:23.002 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:37:23.002 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:37:23.005 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 10:37:23.012 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 10:37:23.013 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 10:37:23.013 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 11.6608ms
+][2023-01-20 10:37:23.014 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:37:23.014 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 201 - application/json;+charset=utf-8 13.2864ms
+][2023-01-20 10:38:45.716 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 10:38:45.722 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:38:45.723 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:38:45.723 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 10:38:45.724 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 10:38:45.724 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 10:38:45.724 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.6406ms
+][2023-01-20 10:38:45.725 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:38:45.725 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 201 - application/json;+charset=utf-8 9.1381ms
+][2023-01-20 10:40:54.660 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 10:40:54.661 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:40:54.661 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:40:54.664 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 10:40:54.665 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 10:40:54.665 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 10:40:54.666 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 4.3246ms
+][2023-01-20 10:40:54.666 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:40:54.666 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 201 - application/json;+charset=utf-8 6.0053ms
+][2023-01-20 10:43:00.116 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 10:43:00.119 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:43:00.120 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:43:00.124 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 10:43:00.127 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 10:43:00.128 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 10:43:00.128 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 8.3404ms
+][2023-01-20 10:43:00.128 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:43:00.128 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 201 - application/json;+charset=utf-8 12.6232ms
+][2023-01-20 10:44:48.629 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 10:44:48.629 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:44:48.657 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:44:48.663 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 10:44:48.669 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 10:44:48.670 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 10:44:48.670 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 12.7543ms
+][2023-01-20 10:44:48.670 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:44:48.670 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 201 - application/json;+charset=utf-8 41.1247ms
+][2023-01-20 10:46:05.255 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 10:46:05.256 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:46:05.257 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:46:05.266 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 10:46:05.267 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 10:46:05.271 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 10:46:05.271 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 13.4013ms
+][2023-01-20 10:46:05.271 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:46:05.271 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 201 - application/json;+charset=utf-8 15.7583ms
+][2023-01-20 10:48:23.364 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 10:48:23.365 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:48:23.368 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:48:23.452 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 10:48:23.508 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 139.4339ms
+][2023-01-20 10:48:23.508 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:48:23.508 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 144.3704ms
+][2023-01-20 10:49:51.935 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 10:49:51.935 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:49:51.935 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:49:51.940 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 10:49:51.943 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 7.7412ms
+][2023-01-20 10:49:51.945 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:49:51.945 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 9.7759ms
+][2023-01-20 10:50:47.810 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 10:50:47.811 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:50:47.812 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:50:47.815 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 10:50:47.815 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 3.6115ms
+][2023-01-20 10:50:47.815 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:50:47.815 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 5.1816ms
+][2023-01-20 10:51:27.821 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 10:51:27.821 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:51:27.822 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:51:27.856 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 10:51:27.856 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 33.8029ms
+][2023-01-20 10:51:27.856 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:51:27.856 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 36.0014ms
+][2023-01-20 10:52:08.150 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 10:52:08.151 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:52:08.152 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 10:52:08.154 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 10:52:08.154 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 2.1728ms
+][2023-01-20 10:52:08.155 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 10:52:08.155 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 4.2250ms
+][2023-01-20 11:01:47.868 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 11:01:47.879 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:01:47.883 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:01:47.908 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:01:47.925 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:01:47.933 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:01:47.957 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 73.3977ms
+][2023-01-20 11:01:47.957 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:01:47.958 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 201 - application/json;+charset=utf-8 93.0185ms
+][2023-01-20 11:02:04.686 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 11:02:04.686 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:02:04.686 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:02:04.687 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:02:04.690 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:02:04.692 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:02:04.693 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 6.5933ms
+][2023-01-20 11:02:04.693 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:02:04.693 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 201 - application/json;+charset=utf-8 7.7833ms
+][2023-01-20 11:03:13.347 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:03:13.347 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:03:13.347 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:03:13.352 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:03:13.353 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 5.8351ms
+][2023-01-20 11:03:13.353 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:03:13.353 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 6.5580ms
+][2023-01-20 11:05:07.450 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:05:07.456 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:05:07.458 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:05:07.459 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:05:07.460 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.5432ms
+][2023-01-20 11:05:07.460 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:05:07.460 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 9.6361ms
+][2023-01-20 11:05:28.121 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:05:28.129 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:05:28.131 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:05:28.132 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:05:28.132 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.3486ms
+][2023-01-20 11:05:28.133 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:05:28.133 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 12.3796ms
+][2023-01-20 11:06:07.807 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:06:07.842 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:06:07.842 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:06:07.843 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:06:07.844 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.0429ms
+][2023-01-20 11:06:07.844 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:06:07.844 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 36.8877ms
+][2023-01-20 11:06:11.055 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:06:11.056 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:06:11.056 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:06:11.057 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:06:11.057 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.3215ms
+][2023-01-20 11:06:11.057 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:06:11.057 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 2.1076ms
+][2023-01-20 11:06:29.692 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:06:29.693 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:06:29.693 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:06:29.693 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:06:29.694 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 0.6335ms
+][2023-01-20 11:06:29.694 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:06:29.694 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 1.3686ms
+][2023-01-20 11:06:56.562 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:06:56.565 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:06:56.565 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:06:56.566 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:06:56.566 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.0312ms
+][2023-01-20 11:06:56.566 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:06:56.566 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 8.8672ms
+][2023-01-20 11:08:22.325 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:08:22.329 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:08:22.330 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:08:22.332 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:08:22.333 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 2.2767ms
+][2023-01-20 11:08:22.333 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:08:22.334 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 8.7025ms
+][2023-01-20 11:08:34.798 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:08:34.798 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:08:34.798 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:08:34.799 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:08:34.799 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.0459ms
+][2023-01-20 11:08:34.799 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:08:34.800 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 1.8803ms
+][2023-01-20 11:09:00.545 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:09:00.550 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:09:00.550 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:09:00.584 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:09:00.584 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 33.3701ms
+][2023-01-20 11:09:00.584 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:09:00.584 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 39.3908ms
+][2023-01-20 11:09:26.023 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:09:26.023 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:09:26.023 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:09:26.032 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:09:26.032 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 8.6128ms
+][2023-01-20 11:09:26.032 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:09:26.032 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 9.2209ms
+][2023-01-20 11:11:40.134 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:11:40.135 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:11:40.135 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:11:40.159 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:11:40.159 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 18.0361ms
+][2023-01-20 11:11:40.159 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:11:40.159 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 24.8864ms
+][2023-01-20 11:12:42.319 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:12:42.333 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:12:42.335 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:12:42.337 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:12:42.338 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.8971ms
+][2023-01-20 11:12:42.338 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:12:42.338 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 19.0090ms
+][2023-01-20 11:13:48.131 +05:30 [INF] Now listening on: https://localhost:7188
+][2023-01-20 11:13:48.215 +05:30 [INF] Now listening on: http://localhost:5199
+][2023-01-20 11:13:48.228 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+][2023-01-20 11:13:48.229 +05:30 [INF] Hosting environment: Development
+][2023-01-20 11:13:48.229 +05:30 [INF] Content root path: C:\Users\hassa\Source\Repos\SalikeHassan\software-engineer-interview\SoftwareEngineerInterview\CSharp\Zip.InstallmentsService\Zip.Installment.Api\
+][2023-01-20 11:13:49.952 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/index.html - -
+][2023-01-20 11:13:51.121 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/index.html - - - 200 - text/html;charset=utf-8 1200.0098ms
+][2023-01-20 11:13:51.178 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - -
+][2023-01-20 11:13:51.188 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 10.7152ms
+][2023-01-20 11:13:51.209 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/_vs/browserLink - -
+][2023-01-20 11:13:52.106 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 897.2979ms
+][2023-01-20 11:13:52.229 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - -
+][2023-01-20 11:13:52.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 453.3085ms
+][2023-01-20 11:15:28.918 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:15:28.945 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:15:29.024 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:15:29.330 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:15:29.401 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 364.5162ms
+][2023-01-20 11:15:29.408 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:15:29.409 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 490.4103ms
+][2023-01-20 11:18:41.558 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:18:41.560 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:18:41.561 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:18:41.574 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:18:41.574 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 13.4761ms
+][2023-01-20 11:18:41.575 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:18:41.575 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 16.8834ms
+][2023-01-20 11:19:06.004 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:19:06.029 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:19:06.031 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:19:06.034 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:19:06.034 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 2.9797ms
+][2023-01-20 11:19:06.034 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:19:06.034 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 30.2741ms
+][2023-01-20 11:19:25.982 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 72
+][2023-01-20 11:19:25.982 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:19:25.982 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:19:25.983 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:19:25.983 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 0.4347ms
+][2023-01-20 11:19:25.983 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:19:25.983 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 72 - 400 - application/problem+json;+charset=utf-8 0.9178ms
+][2023-01-20 11:19:39.133 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:19:39.133 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:19:39.133 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:19:39.138 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:19:39.138 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 4.4712ms
+][2023-01-20 11:19:39.138 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:19:39.138 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 5.2442ms
+][2023-01-20 11:20:07.104 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68
+][2023-01-20 11:20:07.107 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:20:07.107 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:20:07.299 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:20:09.430 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:20:10.208 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:20:10.278 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 3170.0387ms
+][2023-01-20 11:20:10.278 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:20:10.286 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68 - 201 - application/json;+charset=utf-8 3181.4292ms
+][2023-01-20 11:20:16.667 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 11:20:16.667 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:20:16.667 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:20:16.672 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:20:16.672 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 4.5288ms
+][2023-01-20 11:20:16.672 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:20:16.672 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 400 - application/problem+json;+charset=utf-8 5.3436ms
+][2023-01-20 11:20:22.461 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 11:20:22.461 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:20:22.461 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:20:22.462 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:20:22.462 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 0.7111ms
+][2023-01-20 11:20:22.462 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:20:22.462 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 400 - application/problem+json;+charset=utf-8 1.4019ms
+][2023-01-20 11:20:53.343 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:20:53.348 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:20:53.348 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:20:53.352 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:20:53.352 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 3.4013ms
+][2023-01-20 11:20:53.352 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:20:53.352 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 8.4807ms
+][2023-01-20 11:21:48.170 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:21:48.176 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:21:48.176 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:21:48.178 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:21:48.179 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.516ms
+][2023-01-20 11:21:48.179 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:21:48.179 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 9.8379ms
+][2023-01-20 11:22:46.076 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 11:22:46.080 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:22:46.082 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:22:46.083 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:22:46.084 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.194ms
+][2023-01-20 11:22:46.084 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:22:46.084 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 7.9729ms
+][2023-01-20 11:23:42.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - -
+][2023-01-20 11:23:42.317 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:23:42.326 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:23:42.329 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:23:42.375 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:23:42.376 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 49.8076ms
+][2023-01-20 11:23:42.376 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:23:42.376 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - - - 200 - application/json;+charset=utf-8 69.6008ms
+][2023-01-20 11:24:04.553 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - -
+][2023-01-20 11:24:04.554 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:24:04.554 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:24:04.554 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:24:04.577 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:24:04.577 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 23.1093ms
+][2023-01-20 11:24:04.577 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:24:04.577 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - - - 200 - application/json;+charset=utf-8 23.8872ms
+][2023-01-20 11:27:32.774 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:27:32.775 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:27:32.779 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:27:32.783 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:27:32.785 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:27:32.786 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:27:32.787 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 6.8081ms
+][2023-01-20 11:27:32.787 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:27:32.788 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 13.1820ms
+][2023-01-20 11:27:32.819 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - -
+][2023-01-20 11:27:32.819 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:27:32.820 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:27:32.820 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:27:32.822 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:27:32.822 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 2.2759ms
+][2023-01-20 11:27:32.822 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:27:32.822 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - - - 200 - application/json;+charset=utf-8 3.3296ms
+][2023-01-20 11:29:36.047 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:29:36.047 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:29:36.053 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:29:36.055 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:29:36.058 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:29:36.059 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:29:36.059 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 6.2953ms
+][2023-01-20 11:29:36.060 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:29:36.060 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 13.2150ms
+][2023-01-20 11:29:36.085 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - -
+][2023-01-20 11:29:36.085 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:29:36.086 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:29:36.086 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:29:36.088 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:29:36.088 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 2.2733ms
+][2023-01-20 11:29:36.088 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:29:36.089 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - - - 200 - application/json;+charset=utf-8 3.5987ms
+][2023-01-20 11:29:56.884 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:29:56.889 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:29:56.890 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:29:56.892 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:29:56.893 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:29:56.894 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:29:56.894 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 3.1517ms
+][2023-01-20 11:29:56.895 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:29:56.895 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 11.1424ms
+][2023-01-20 11:29:56.916 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - -
+][2023-01-20 11:29:56.916 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:29:56.916 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:29:56.916 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:29:56.917 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:29:56.918 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 1.4188ms
+][2023-01-20 11:29:56.918 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:29:56.918 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - - - 200 - application/json;+charset=utf-8 2.0912ms
+][2023-01-20 11:31:15.277 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:31:15.277 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:31:15.277 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:31:15.279 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:31:15.280 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:31:15.281 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:31:15.282 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 4.1122ms
+][2023-01-20 11:31:15.282 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:31:15.282 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 7.0339ms
+][2023-01-20 11:31:15.311 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - -
+][2023-01-20 11:31:15.312 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:31:15.312 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:31:15.313 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:31:15.314 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:31:15.314 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 1.9124ms
+][2023-01-20 11:31:15.315 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:31:15.315 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - - - 200 - application/json;+charset=utf-8 3.3697ms
+][2023-01-20 11:31:45.756 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:31:45.762 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:31:45.762 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:31:45.799 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:31:45.801 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:31:45.802 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:31:45.802 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 40.1513ms
+][2023-01-20 11:31:45.802 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:31:45.802 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 46.7755ms
+][2023-01-20 11:31:45.837 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - -
+][2023-01-20 11:31:45.837 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:31:45.837 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:31:45.837 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:31:45.839 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:31:45.840 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 2.8475ms
+][2023-01-20 11:31:45.840 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:31:45.840 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - - - 200 - application/json;+charset=utf-8 3.8027ms
+][2023-01-20 11:33:18.192 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:33:18.194 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:33:18.197 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:33:18.198 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:33:18.199 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:33:18.200 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:33:18.200 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 3.7197ms
+][2023-01-20 11:33:18.200 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:33:18.201 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 8.4880ms
+][2023-01-20 11:33:18.253 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - -
+][2023-01-20 11:33:18.254 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:33:18.254 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:33:18.255 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:33:18.258 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:33:18.258 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 3.701ms
+][2023-01-20 11:33:18.258 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:33:18.259 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - - - 200 - application/json;+charset=utf-8 5.2890ms
+][2023-01-20 11:33:42.599 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:33:42.604 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:33:42.604 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:33:42.608 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:33:42.608 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:33:42.609 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:33:42.610 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 3.3844ms
+][2023-01-20 11:33:42.610 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:33:42.611 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 11.5487ms
+][2023-01-20 11:33:42.652 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - -
+][2023-01-20 11:33:42.652 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:33:42.652 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:33:42.653 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:33:42.655 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:33:42.655 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 2.6401ms
+][2023-01-20 11:33:42.655 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:33:42.656 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - - - 200 - application/json;+charset=utf-8 3.9464ms
+][2023-01-20 11:34:00.089 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:34:00.089 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:34:00.090 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:34:00.090 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:34:00.092 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:34:00.093 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:34:00.094 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 4.1353ms
+][2023-01-20 11:34:00.094 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:34:00.094 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 4.9730ms
+][2023-01-20 11:34:00.131 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - -
+][2023-01-20 11:34:00.131 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:34:00.132 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:34:00.132 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:34:00.134 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:34:00.135 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 3.025ms
+][2023-01-20 11:34:00.135 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:34:00.135 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/1fd64d59-82b2-4719-a3bb-bd3c953bf8a3 - - - 200 - application/json;+charset=utf-8 4.2917ms
+][2023-01-20 11:35:32.891 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:35:32.891 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:35:32.891 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:35:32.894 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:35:32.895 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:35:32.898 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:35:32.898 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 4.4397ms
+][2023-01-20 11:35:32.898 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:35:32.898 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 7.6096ms
+][2023-01-20 11:35:32.938 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/ - -
+][2023-01-20 11:35:32.938 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+][2023-01-20 11:35:32.944 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+][2023-01-20 11:35:33.016 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+][2023-01-20 11:35:33.026 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/ - - - 405 - application/problem+json;+charset=utf-8 88.0971ms
+][2023-01-20 11:36:54.289 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:36:54.294 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:36:54.294 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:36:54.325 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:36:54.326 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:36:54.327 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:36:54.327 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 31.7048ms
+][2023-01-20 11:36:54.328 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:36:54.328 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 39.1507ms
+][2023-01-20 11:36:54.372 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/ - -
+][2023-01-20 11:36:54.372 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+][2023-01-20 11:36:54.372 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+][2023-01-20 11:36:54.374 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+][2023-01-20 11:36:54.374 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/ - - - 405 - application/problem+json;+charset=utf-8 2.1668ms
+][2023-01-20 11:39:24.790 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:39:24.794 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:39:24.796 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:39:24.798 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:39:24.799 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:39:24.799 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:39:24.800 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 3.8911ms
+][2023-01-20 11:39:24.800 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:39:24.800 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 11.0794ms
+][2023-01-20 11:42:41.851 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:42:41.851 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:42:41.853 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:42:41.854 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:42:41.856 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:42:41.857 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:42:41.858 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 4.1163ms
+][2023-01-20 11:42:41.858 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:42:41.858 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 8.8856ms
+][2023-01-20 11:42:41.900 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/5ba095ca-ef54-43bd-87fc-85fc45d5ae46 application/json -
+][2023-01-20 11:42:41.900 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:42:41.900 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:42:41.901 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:42:41.902 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:42:41.902 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 2.0729ms
+][2023-01-20 11:42:41.902 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:42:41.903 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/5ba095ca-ef54-43bd-87fc-85fc45d5ae46 application/json - - 200 - application/json;+charset=utf-8 2.8036ms
+][2023-01-20 11:42:41.931 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/ - -
+][2023-01-20 11:42:41.932 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+][2023-01-20 11:42:41.932 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+][2023-01-20 11:42:41.932 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+][2023-01-20 11:42:41.937 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/ - - - 405 - application/problem+json;+charset=utf-8 5.6695ms
+][2023-01-20 11:43:17.845 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:43:17.847 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:43:17.847 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:43:17.852 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:43:17.854 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:43:17.854 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:43:17.855 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 7.6814ms
+][2023-01-20 11:43:17.855 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:43:17.855 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 10.2617ms
+][2023-01-20 11:43:17.885 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/3cfcdb6a-e3a5-4c2c-8b6e-5bac7edd7541 application/json -
+][2023-01-20 11:43:17.885 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:43:17.885 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:43:17.885 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:43:17.887 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:43:17.887 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 2.1053ms
+][2023-01-20 11:43:17.887 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:43:17.887 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/3cfcdb6a-e3a5-4c2c-8b6e-5bac7edd7541 application/json - - 200 - application/json;+charset=utf-8 2.7346ms
+][2023-01-20 11:43:17.903 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/ - -
+][2023-01-20 11:43:17.904 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+][2023-01-20 11:43:17.904 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+][2023-01-20 11:43:17.904 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+][2023-01-20 11:43:17.904 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/ - - - 405 - application/problem+json;+charset=utf-8 0.7636ms
+][2023-01-20 11:46:51.520 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:46:51.521 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:46:51.521 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:46:51.522 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:46:51.538 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:46:51.540 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:46:51.540 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 19.3756ms
+][2023-01-20 11:46:51.540 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:46:51.541 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 42.6688ms
+][2023-01-20 11:48:05.464 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:48:05.468 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:48:05.468 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:48:05.470 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:48:05.471 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:48:05.473 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:48:05.473 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 4.5224ms
+][2023-01-20 11:48:05.473 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:48:05.473 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 9.3671ms
+][2023-01-20 11:48:05.506 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/807732bf-e750-4215-b2a1-02cf88fb4508 - -
+][2023-01-20 11:48:05.506 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:48:05.506 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:48:05.507 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:48:05.508 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:48:05.509 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 2.2697ms
+][2023-01-20 11:48:05.509 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:48:05.509 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/807732bf-e750-4215-b2a1-02cf88fb4508 - - - 200 - application/json;+charset=utf-8 3.0617ms
+][2023-01-20 11:48:25.755 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:48:25.799 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:48:25.799 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:48:25.800 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:48:25.802 +05:30 [INF] Saved 5 entities to in-memory store.
+][2023-01-20 11:48:25.803 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:48:25.803 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 4.0358ms
+][2023-01-20 11:48:25.803 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:48:25.803 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 48.5155ms
+][2023-01-20 11:48:25.843 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/4ad78520-8a18-44fa-80f2-1fd2634e46ff - -
+][2023-01-20 11:48:25.845 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:48:25.845 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:48:25.846 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:48:25.848 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:48:25.849 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 3.2419ms
+][2023-01-20 11:48:25.849 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:48:25.849 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/4ad78520-8a18-44fa-80f2-1fd2634e46ff - - - 200 - application/json;+charset=utf-8 5.5205ms
+][2023-01-20 11:48:55.025 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:48:55.030 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:48:55.031 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:48:55.033 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:48:55.034 +05:30 [INF] Saved 5 entities to in-memory store.
+][2023-01-20 11:48:55.035 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:48:55.035 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 2.7059ms
+][2023-01-20 11:48:55.035 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:48:55.035 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 10.5295ms
+][2023-01-20 11:48:55.061 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/ebbf5dca-58aa-45b9-ba93-8f986b9ee370 - -
+][2023-01-20 11:48:55.062 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:48:55.062 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:48:55.063 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:48:55.065 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:48:55.065 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 3.3205ms
+][2023-01-20 11:48:55.066 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:48:55.066 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/ebbf5dca-58aa-45b9-ba93-8f986b9ee370 - - - 200 - application/json;+charset=utf-8 4.8358ms
+][2023-01-20 11:50:23.289 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:50:23.289 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:50:23.291 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:50:23.291 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:50:23.292 +05:30 [INF] Saved 5 entities to in-memory store.
+][2023-01-20 11:50:23.293 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:50:23.294 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 2.9874ms
+][2023-01-20 11:50:23.294 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:50:23.294 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 5.9274ms
+][2023-01-20 11:50:23.322 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/49ae3fd3-c5a2-4026-9983-95e29f0bc1b8 - -
+][2023-01-20 11:50:23.323 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:50:23.324 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:50:23.324 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:50:23.326 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:50:23.326 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 2.4066ms
+][2023-01-20 11:50:23.326 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:50:23.326 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/49ae3fd3-c5a2-4026-9983-95e29f0bc1b8 - - - 200 - application/json;+charset=utf-8 4.2882ms
+][2023-01-20 11:52:06.550 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:52:06.558 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:52:06.558 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:52:06.560 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:52:06.561 +05:30 [INF] Saved 5 entities to in-memory store.
+][2023-01-20 11:52:06.563 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:52:06.563 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 3.5085ms
+][2023-01-20 11:52:06.563 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:52:06.564 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 13.7037ms
+][2023-01-20 11:52:06.602 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/112299bf-6a7d-4bb6-b9fb-cbf5120f148e - -
+][2023-01-20 11:52:06.603 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:52:06.603 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:52:06.604 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:52:06.606 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:52:06.606 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 3.1386ms
+][2023-01-20 11:52:06.606 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:52:06.607 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/112299bf-6a7d-4bb6-b9fb-cbf5120f148e - - - 200 - application/json;+charset=utf-8 4.9303ms
+][2023-01-20 11:52:46.616 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:52:46.622 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:52:46.622 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:52:46.654 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:52:46.656 +05:30 [INF] Saved 5 entities to in-memory store.
+][2023-01-20 11:52:46.658 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:52:46.658 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 4.5714ms
+][2023-01-20 11:52:46.658 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:52:46.658 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 42.5497ms
+][2023-01-20 11:52:46.684 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/16d5c261-f4ac-4d07-a868-d7a22ed624fd - -
+][2023-01-20 11:52:46.684 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:52:46.685 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:52:46.685 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:52:46.686 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:52:46.687 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 2.0408ms
+][2023-01-20 11:52:46.687 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:52:46.687 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/16d5c261-f4ac-4d07-a868-d7a22ed624fd - - - 200 - application/json;+charset=utf-8 3.0114ms
+][2023-01-20 11:53:07.658 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 11:53:07.659 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:53:07.660 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:53:07.661 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:53:07.662 +05:30 [INF] Saved 5 entities to in-memory store.
+][2023-01-20 11:53:07.663 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:53:07.664 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 2.9858ms
+][2023-01-20 11:53:07.664 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:53:07.664 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 7.0439ms
+][2023-01-20 11:53:07.687 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/17a091d2-06ff-431a-86cc-cc41d55879dd - -
+][2023-01-20 11:53:07.687 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:53:07.688 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:53:07.688 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 11:53:07.691 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:53:07.691 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 2.9194ms
+][2023-01-20 11:53:07.691 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 11:53:07.691 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/17a091d2-06ff-431a-86cc-cc41d55879dd - - - 200 - application/json;+charset=utf-8 4.6892ms
+][2023-01-20 11:56:09.848 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68
+][2023-01-20 11:56:09.854 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:56:09.854 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:56:09.856 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:56:09.859 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:56:09.862 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:56:09.863 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 8.1642ms
+][2023-01-20 11:56:09.863 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:56:09.863 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68 - 201 - application/json;+charset=utf-8 14.6853ms
+][2023-01-20 11:56:38.012 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68
+][2023-01-20 11:56:38.020 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:56:38.021 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:56:38.021 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:56:38.027 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:56:38.031 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:56:38.031 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 10.0835ms
+][2023-01-20 11:56:38.031 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:56:38.031 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68 - 201 - application/json;+charset=utf-8 18.6961ms
+][2023-01-20 11:56:56.355 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68
+][2023-01-20 11:56:56.355 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:56:56.356 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:56:56.357 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:56:56.363 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:56:56.364 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:56:56.364 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 8.8103ms
+][2023-01-20 11:56:56.365 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:56:56.365 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68 - 201 - application/json;+charset=utf-8 9.6967ms
+][2023-01-20 11:58:15.852 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68
+][2023-01-20 11:58:15.852 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:58:15.854 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:58:15.860 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 11:58:15.862 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 11:58:15.862 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 11:58:15.863 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 8.2281ms
+][2023-01-20 11:58:15.863 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:58:15.863 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68 - 201 - application/json;+charset=utf-8 11.8292ms
+][2023-01-20 11:59:55.133 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 11:59:55.133 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:59:55.135 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 11:59:55.139 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 11:59:55.140 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 4.3189ms
+][2023-01-20 11:59:55.140 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 11:59:55.140 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 400 - application/problem+json;+charset=utf-8 8.0620ms
+][2023-01-20 12:00:11.803 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 12:00:11.803 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:00:11.804 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:00:11.805 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 12:00:11.805 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.1042ms
+][2023-01-20 12:00:11.806 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:00:11.806 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 400 - application/problem+json;+charset=utf-8 2.7135ms
+][2023-01-20 12:01:24.037 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 12:01:24.042 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:01:24.042 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:01:24.048 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 12:01:24.048 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 5.9479ms
+][2023-01-20 12:01:24.048 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:01:24.048 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 400 - application/problem+json;+charset=utf-8 11.5174ms
+][2023-01-20 12:02:24.238 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 12:02:24.247 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:02:24.247 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:02:24.250 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 12:02:24.250 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 2.7037ms
+][2023-01-20 12:02:24.250 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:02:24.250 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 12.6351ms
+][2023-01-20 12:02:32.453 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 12:02:32.462 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:02:32.462 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:02:32.462 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 12:02:32.463 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 0.6937ms
+][2023-01-20 12:02:32.463 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:02:32.463 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 9.2750ms
+][2023-01-20 12:02:55.369 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 12:02:55.371 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:02:55.372 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:02:55.373 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 12:02:55.374 +05:30 [INF] Saved 5 entities to in-memory store.
+][2023-01-20 12:02:55.375 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 12:02:55.376 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 3.881ms
+][2023-01-20 12:02:55.376 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:02:55.376 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 6.3800ms
+][2023-01-20 12:02:55.420 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/b356e4e9-77f4-4563-ace1-b997d2a7d2bd - -
+][2023-01-20 12:02:55.420 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 12:02:55.420 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:02:55.420 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 12:02:55.422 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 12:02:55.423 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 2.4457ms
+][2023-01-20 12:02:55.423 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 12:02:55.423 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/b356e4e9-77f4-4563-ace1-b997d2a7d2bd - - - 200 - application/json;+charset=utf-8 4.5341ms
+][2023-01-20 12:07:22.557 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68
+][2023-01-20 12:07:22.570 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:07:22.571 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:07:22.575 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 12:07:22.576 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 12:07:22.577 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 12:07:22.577 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 5.8299ms
+][2023-01-20 12:07:22.577 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:07:22.577 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68 - 201 - application/json;+charset=utf-8 20.2494ms
+][2023-01-20 12:07:22.633 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 12:07:22.633 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:07:22.633 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:07:22.634 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 12:07:22.635 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.4132ms
+][2023-01-20 12:07:22.635 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:07:22.635 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 400 - application/problem+json;+charset=utf-8 2.1317ms
+][2023-01-20 12:07:22.657 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 12:07:22.658 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:07:22.658 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:07:22.658 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 12:07:22.659 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 0.8976ms
+][2023-01-20 12:07:22.659 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:07:22.659 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 400 - application/problem+json;+charset=utf-8 1.5873ms
+][2023-01-20 12:07:22.684 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 12:07:22.685 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:07:22.685 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:07:22.686 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 12:07:22.687 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 1.2568ms
+][2023-01-20 12:07:22.687 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:07:22.687 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 2.5141ms
+][2023-01-20 12:07:22.716 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 12:07:22.716 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:07:22.716 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:07:22.717 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 12:07:22.718 +05:30 [INF] Saved 5 entities to in-memory store.
+][2023-01-20 12:07:22.719 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 12:07:22.720 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 3.9437ms
+][2023-01-20 12:07:22.720 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:07:22.720 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 4.8387ms
+][2023-01-20 12:07:22.742 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/45b478e9-39d6-4f07-ada8-cf5e8f293048 - -
+][2023-01-20 12:07:22.742 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 12:07:22.742 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:07:22.743 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 12:07:22.745 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 12:07:22.745 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 3.0559ms
+][2023-01-20 12:07:22.746 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 12:07:22.746 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/45b478e9-39d6-4f07-ada8-cf5e8f293048 - - - 200 - application/json;+charset=utf-8 4.1403ms
+][2023-01-20 12:08:09.552 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68
+][2023-01-20 12:08:09.554 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:08:09.554 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:08:09.557 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 12:08:09.559 +05:30 [INF] Saved 4 entities to in-memory store.
+][2023-01-20 12:08:09.561 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 12:08:09.562 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 5.3247ms
+][2023-01-20 12:08:09.562 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:08:09.562 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 68 - 201 - application/json;+charset=utf-8 10.3510ms
+][2023-01-20 12:08:09.615 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 12:08:09.616 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:08:09.616 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:08:09.616 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 12:08:09.616 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 0.704ms
+][2023-01-20 12:08:09.616 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:08:09.617 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 400 - application/problem+json;+charset=utf-8 1.2999ms
+][2023-01-20 12:08:09.642 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69
+][2023-01-20 12:08:09.642 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:08:09.642 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:08:09.643 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 12:08:09.643 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 0.7407ms
+][2023-01-20 12:08:09.643 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:08:09.643 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 69 - 400 - application/problem+json;+charset=utf-8 1.4399ms
+][2023-01-20 12:08:09.668 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70
+][2023-01-20 12:08:09.668 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:08:09.668 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:08:09.669 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+][2023-01-20 12:08:09.669 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 0.9432ms
+][2023-01-20 12:08:09.669 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:08:09.669 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 70 - 400 - application/problem+json;+charset=utf-8 1.7791ms
+][2023-01-20 12:08:09.695 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51
+][2023-01-20 12:08:09.696 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:08:09.696 +05:30 [INF] Route matched with {action = "Post", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Zip.Installments.Contract.Request.PaymentPlanRequest) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:08:09.696 +05:30 [INF] Create payment installment plan api called.
+][2023-01-20 12:08:09.698 +05:30 [INF] Saved 5 entities to in-memory store.
+][2023-01-20 12:08:09.699 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 12:08:09.700 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api) in 3.9724ms
+][2023-01-20 12:08:09.700 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Post (Zip.Installments.Api)'
+][2023-01-20 12:08:09.700 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7188/api/v1/paymentinstallment application/json 51 - 201 - application/json;+charset=utf-8 4.6375ms
+][2023-01-20 12:08:09.714 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/298f9d3e-bf32-48c7-b05c-bd1a5224eb9f - -
+][2023-01-20 12:08:09.714 +05:30 [INF] Executing endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 12:08:09.714 +05:30 [INF] Route matched with {action = "Get", controller = "PaymentInstallment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller Zip.Installments.Api.Controllers.PaymentInstallmentController (Zip.Installments.Api).
+][2023-01-20 12:08:09.715 +05:30 [INF] Get payment installment plan by id api called.
+][2023-01-20 12:08:09.716 +05:30 [INF] Executing OkObjectResult, writing value of type 'Zip.Installments.Contract.Response.PaymentPlanResponse'.
+][2023-01-20 12:08:09.717 +05:30 [INF] Executed action Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api) in 2.0701ms
+][2023-01-20 12:08:09.717 +05:30 [INF] Executed endpoint 'Zip.Installments.Api.Controllers.PaymentInstallmentController.Get (Zip.Installments.Api)'
+][2023-01-20 12:08:09.717 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7188/api/v1/paymentinstallment/298f9d3e-bf32-48c7-b05c-bd1a5224eb9f - - - 200 - application/json;+charset=utf-8 2.8127ms
+]

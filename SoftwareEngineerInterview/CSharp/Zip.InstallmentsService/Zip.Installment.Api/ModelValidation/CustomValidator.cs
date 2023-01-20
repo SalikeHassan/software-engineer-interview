@@ -11,7 +11,7 @@ public class CustomValidator : AbstractValidator<PaymentPlanRequest>
         RuleFor(x => x.Amount).GreaterThan(Constants.MinmValue)
             .WithMessage(Constants.AmountMinmValueErrMsg);
 
-        RuleFor(x => x.NumofInstallement).GreaterThan(Constants.MinmValue)
+        RuleFor(x => x.NumofInstallment).GreaterThan(Constants.MinmValue)
             .WithMessage(Constants.NoOfInstallmentMinmValueErrMsg);
 
         RuleFor(x => x.Frequency).GreaterThan(Constants.MinmValue)

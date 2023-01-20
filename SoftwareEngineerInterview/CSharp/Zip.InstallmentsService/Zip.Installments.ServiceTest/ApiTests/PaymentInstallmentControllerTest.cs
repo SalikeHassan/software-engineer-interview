@@ -83,7 +83,7 @@ public class PaymentInstallmentControllerTest
             {
                 Amount = amount,
                 Frequency = frequency,
-                NumofInstallement = numOfInstallements
+                NumofInstallment = numOfInstallements
             }
           ) as ObjectResult;
 
@@ -120,7 +120,7 @@ public class PaymentInstallmentControllerTest
            this.mediator.Object,
            this.logger.Object);
 
-        var requestModel = new PaymentPlanRequest() { Amount = -1, Frequency = -1, NumofInstallement = -1 };
+        var requestModel = new PaymentPlanRequest() { Amount = -1, Frequency = -1, NumofInstallment = -1 };
         var validator = new CustomValidator();
         var validationResult = validator.Validate(requestModel);
 
