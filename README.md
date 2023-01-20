@@ -8,7 +8,7 @@
 - Download or clone code from this repo.
 - Open Visual Studio 2022.
 - Browse solution file from cloned folder.
-- Set Zip.Installments.Api as startup project as shown below screenshot
+- Set Zip.Installments.Api as startup project as shown below screenshot.
   ![image](https://user-images.githubusercontent.com/18566830/213714130-9d2efc3e-0255-45ab-96c4-2b5f9f258355.png)
 
 - Configure serilog in appsettings.json as below.
@@ -56,90 +56,29 @@
 ```
 ![image](https://user-images.githubusercontent.com/18566830/213720888-6107b4e4-ece2-4bba-a080-a9c9259f1fb7.png)
 
-After the successfull Post request API will return the details of payment installment plan, as shown in the below screenshot <br>
+After the successfull Post request API will return the details of payment installment plan, as shown in the below screenshot. <br>
 ![image](https://user-images.githubusercontent.com/18566830/213721529-bc0c48ff-3ec5-4e83-98f9-c15ae8c8ce87.png)
 
 #### Get payment installment API details
-1. Get payment installment plan details by id.<br>
-<table>
-  <tr>
-    <td>Request Url</td>
-    <td>https://localhost:7188/api/v1/paymentinstallment</td>
-  </tr>
-   <tr>
-    <td>Request Type</td>
-    <td>Get</td>
-  </tr>
-   <tr>
-    <td>Request Headers</td>
-     <td>
-      <ol>
-        <li>accept:application/json</li>
-      </ol>  
-    </td>
-  </tr>
-</table>
+1. In swagger ui click on GET /api/v1/paymentinstallment/{id} section, and then click on Try it out button as shown in the below screenshot.
+  ![image](https://user-images.githubusercontent.com/18566830/213723013-3085d57a-a2f3-43ed-b5b7-6d4ec357b165.png)
+  
+2. Provide the id of payment plan id, the below screenshot shows an example of id created when a payment installment plan created through POST request.
+<img width="925" alt="image" src="https://user-images.githubusercontent.com/18566830/213723970-933a8412-f8dd-4cae-87e1-09c203c5aa2a.png">
+Provide the id in textbox and then click on execute button, as shown in below screenshot.<br>
+<img width="925" alt="image" src="https://user-images.githubusercontent.com/18566830/213724370-bd3b3996-4e14-4d07-b899-867ed7d06dbc.png">
+For the valid id API will return the payment plan and installment plan as shown in the below screenshot.<br>
+<img width="925" alt="image" src="https://user-images.githubusercontent.com/18566830/213724781-ae12289b-752a-4168-beff-f75c61c849ef.png">
 
-2. Sample response body.<br>
-```
-{
-    "id": "07db911b-533d-492a-93bd-eb428bec27ea",
-    "amount": 2400,
-    "installments": [
-        {
-            "dueDate": "01/20/2023",
-            "dueAmount": 600,
-            "paymentId": "07db911b-533d-492a-93bd-eb428bec27ea"
-        },
-        {
-            "dueDate": "02/03/2023",
-            "dueAmount": 600,
-            "paymentId": "07db911b-533d-492a-93bd-eb428bec27ea"
-        },
-        {
-            "dueDate": "02/17/2023",
-            "dueAmount": 600,
-            "paymentId": "07db911b-533d-492a-93bd-eb428bec27ea"
-        },
-        {
-            "dueDate": "03/03/2023",
-            "dueAmount": 600,
-            "paymentId": "07db911b-533d-492a-93bd-eb428bec27ea"
-        }
-    ]
-}
-```
-3. Parameters details.
-<table>
-  <tr>
-    <td>Url Parameter</td>
-    <td>Payment plan id</td>
-  </tr>
-   <tr>
-    <td>Data Type</td>
-    <td>Guid</td>
-  </tr>
-   <tr>
-    <td>Comment</td>
-     <td>
-       Payment plan id 
-    </td>
-  </tr>
-</table>
+## Steps to Run the Unit Test Cases:
+- In Visual Studio 2022, Click View --> select Test Explorer, as shown in below screenshot.
+  ![image](https://user-images.githubusercontent.com/18566830/213725986-a6d719b5-3a59-4f3e-8f64-22bd071c2626.png)
 
-4. Curl request.
-```
-curl -X 'GET' \
-  'https://localhost:7188/api/v1/paymentinstallment/07db911b-533d-492a-93bd-eb428bec27ea' \
-  -H 'accept: text/plain'
-```
-## Running Unit Test Cases:
-- In Visual Studio 2022, Click View --> select Test Explorer.
-- System will open window as below.
+- System will open window as shown in below screenshot.
   ![image](https://user-images.githubusercontent.com/18566830/213655277-6b1b90be-860c-4bd1-a14a-6d5c03288c4c.png)
-- Right click on Zip.Installments.ServiceTest and select run.
+- Right click on Zip.Installments.ServiceTest and select run to run the unit test cases.
 
-## Running Integration Tests:
+## Steps to Run the Integration Tests Using Postman:
 - Open postman.
 - Click on import in top left hand side. It opens below pop-up window.
  ![image](https://user-images.githubusercontent.com/18566830/213656020-6ff3f414-0b9c-4542-863e-0f3f9b9abbe3.png)
@@ -153,7 +92,7 @@ curl -X 'GET' \
 - System will run the integration test and show results as below.
  ![image](https://user-images.githubusercontent.com/18566830/213659390-c66e40f3-1130-4f39-969f-d1e0192ff85d.png)
 
-## Design:
+## Project Solution Design:
 - This system is designed using clean architecture. Below are the sub-component of this application.
 - 1.Zip.Installments.Api:<br>
   This is project contains logic for payment installment plan.
@@ -173,30 +112,56 @@ curl -X 'GET' \
   This project contains the logic of business requirement.
 - 9.Zip.Installments.ServiceTest:<br>
   This project contains the unit test cases.
+  
+## Schema Design Details:
+1. See below the schema details of request object **PaymentPlanRequest**.
+ ```
+ PaymentPlanRequest
+{
+  amount	number($double)
+  numofInstallment integer($int32)
+  frequency	integer($int32)
+}
+ ```
+2. See below the schema details of response objects **PaymentPlanResponse**, and **InstallmentDetailsResponse**.
+```
+PaymentPlanResponse
+{
+  id	string($uuid)
+  amount number($double)
+  installments InstallmentDetailsResponse
+}
+```
+```
+InstallmentDetailsResponse
+{
+  dueDate	string
+  nullable: true
+  dueAmount	number($double)
+  paymentId	string($uuid)
+}
+```
+## Nugets Packages Used:
+1. AutoFixture
+2. FluentValidation.AspNetCore
+3. FluentValidation.DependencyInjectionExtensions
+4. Hellang.Middleware.ProblemDetails
+5. MediatR
+6. MediatR.Extensions.Microsoft.DependencyInjection
+7. Microsoft.AspNetCore.Mvc.Versioning
+8. Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer
+9. Microsoft.EntityFrameworkCore
+10. Microsoft.EntityFrameworkCore.Design
+11. Microsoft.EntityFrameworkCore.InMemory
+12. Microsoft.EntityFrameworkCore.Tools
+13. Microsoft.NET.Test.Sdk
+14. Moq
+15. NUnit
+16. NUnit.Analyzers
+17. NUnit3TestAdapter
+18. Serilog.AspNetCore
+29. Swashbuckle.AspNetCore
 
-## Techonology and Nugets used:
-1. .Net 6
-2. AutoFixture
-3. FluentValidation.AspNetCore
-4. FluentValidation.DependencyInjectionExtensions
-5. Hellang.Middleware.ProblemDetails
-6. MediatR
-7. MediatR.Extensions.Microsoft.DependencyInjection
-8. Microsoft.AspNetCore.Mvc.Versioning
-9. Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer
-10. Microsoft.EntityFrameworkCore
-11. Microsoft.EntityFrameworkCore.Design
-12. Microsoft.EntityFrameworkCore.InMemory
-13. Microsoft.EntityFrameworkCore.Tools
-14. Microsoft.NET.Test.Sdk
-15. Moq
-16. NUnit
-17. NUnit.Analyzers
-18. NUnit3TestAdapter
-19. Serilog.AspNetCore
-20. Swashbuckle.AspNetCore
-
-## Note: Below is the problem statement.
 ## Overview
 
 Zip is a payment gateway that lets consumers split purchases into 4 interest free installments, every two weeks. The first 25% is taken when the purchase is made, and the remaining 3 installments of 25% are automatically taken every 14 days. We help customers manage their cash-flow while helping merchants increase conversion rates and average order values.
