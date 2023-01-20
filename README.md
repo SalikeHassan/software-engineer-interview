@@ -1,3 +1,18 @@
+# Prerequisite To Run Code:
+[Download .Net6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)<br/>
+[Download VS Code](https://code.visualstudio.com/download)<br/>
+
+# How to run code in VS Code?
+- Download or clone code from this repo
+- Open VS Code
+- Open folder ~\SoftwareEngineerInterview\CSharp\Zip.InstallmentsService in VS Code by clicking the menu File->Open Folder
+![image](https://user-images.githubusercontent.com/18566830/213638726-2b56d243-e1fd-4065-8eb2-a4176ec3edc2.png)
+- Open the new Terminal in vs code, by clicking then menu Terminal->New Terminal
+![image](https://user-images.githubusercontent.com/18566830/213639866-13660f05-bfe3-42c4-9d97-8dbfbd6845e3.png)
+
+
+
+
 # Zip Software Engineer Interview
 
 ## Overview
