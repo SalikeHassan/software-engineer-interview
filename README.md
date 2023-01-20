@@ -4,7 +4,7 @@
 - [Download Visual Studio 2022 Community Version](https://code.visualstudio.com/download)<br/>
 - [Download Postman](https://www.postman.com/downloads/)<br/>
 
-## How to run code in Visual Studio 2022?
+## How to Run Code in Visual Studio 2022?
 - Download or clone code from this repo.
 - Open Visual Studio 2022.
 - Browse solution file from the cloned folder.
